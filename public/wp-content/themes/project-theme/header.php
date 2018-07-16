@@ -20,17 +20,16 @@ $wordpress = new WordpressHelper;
 	</head>
 
 	<body <?php body_class(); ?>>
-
-		<div class="u-l-container u-l-horizontal-padding">
-			<div class="l-site-header c-site-header">
-				<div class="l-site-header__title">
-					<?= $render->view('Components/c-site-title', $wordpress->getBlogInfo('title')); ?>
-				</div>
-				<div class="l-site-header__nav">
-					<?= $render->view('Components/c-site-nav'); ?>
-				</div>
-				<div class="l-site-header__social">
-					<?= $render->view('Components/c-site-social'); ?>
+		
+		<div class="l-site-header__wrap">
+			<div class="u-l-container u-l-horizontal-padding">
+				<div class="l-site-header c-site-header">
+					<div class="l-site-header__title">
+						<?= $render->view('Components/c-site-title', $wordpress->getBlogInfo('title')); ?>
+					</div>
+					<div class="l-site-header__nav">
+						<?= $render->view('Components/c-site-nav'); ?>
+					</div>
 				</div>
 			</div>
 		</div>

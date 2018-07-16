@@ -49,7 +49,7 @@ class Config
     public function removeMenuItem()
     {
         if ($this->acfExists()) {
-            $this->addFilter('acf/settings/show_admin', '__return_false');
+            // $this->addFilter('acf/settings/show_admin', '__return_false');
         }
     }
 

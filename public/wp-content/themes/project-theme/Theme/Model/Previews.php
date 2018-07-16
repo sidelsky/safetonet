@@ -4,6 +4,9 @@ namespace Theme\Model;
 use App\WordPress\WordPress;
 use \WP_Query;
 
+
+//new Previews()
+
 /**
  * Fetch and parse Wordpress posts (or custom post types) for preview data of the full post
  *

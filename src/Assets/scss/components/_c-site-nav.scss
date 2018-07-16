@@ -1,13 +1,43 @@
 // scss-lint:disable NestingDepth
 
 .c-site-nav {
-    .page_item {
+    outline: solid 1px red;
+    font-family: $font-primary--book;
+    .menu-item {
+        display: inline-block;
+        margin-left: $spacing--tiny;
+        text-transform: uppercase;
+        
         a {
-            color: $primary-font-color;
+            color:  palette(bw, white);
+            padding: $spacing--small 0;
+            display: inline-block;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                left: 50%;
+                bottom: 15px;
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: currentColor;
+                transition: 0.3s width ease;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                background-color: palette(bw, white);
+            }
 
             &:hover {
-                text-decoration: underline;
+                text-decoration: none;
+                
+                &:after {
+                    width: 50%;
+                }
             }
+
         }
 
         &.current_page_item {

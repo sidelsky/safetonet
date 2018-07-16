@@ -22,3 +22,49 @@ $primary-font-color: $black;
 $primary-font-weight: $weight-regular;
 $primary-font-size: $text-regular;
 $primary-link-color: $black;
+
+/**
+* Fonts
+*/
+$font-name: 'gotham-rounded';
+$file-path: 'fonts/';
+$font-weight--book: 'book';
+$font-weight--medium: 'medium';
+$font-weight--bold: 'bold';
+
+/**
+* Gotham Rounded Book
+*/
+@include web-font(
+    '#{$font-name}-#{$font-weight--book}', 
+    '#{$file-path}', 
+    '#{$font-name}-#{$font-weight--book}'
+    );
+
+/**
+* Gotham Rounded Medium
+*/
+@include web-font(
+    '#{$font-name}-#{$font-weight--medium}',
+    '#{$file-path}',
+    '#{$font-name}-#{$font-weight--medium}'
+);
+
+/**
+* Gotham Rounded Bold
+*/
+@include web-font(
+    '#{$font-name}-#{$font-weight--bold}',
+    '#{$file-path}',
+    '#{$font-name}-#{$font-weight--bold}'
+);
+
+/**
+* Typefaces
+* @useage: font-family(primary, regular);
+*/
+$system-fonts: Helvetica, Arial, sans-serif;
+
+$font-primary--book: '#{$font-name}-#{$font-weight--book}', $system-fonts;
+$font-primary--medium: '#{$font-name}-#{$font-weight--medium}', $system-fonts;
+$font-primary--bold: '#{$font-name}-#{$font-weight--bold}', $system-fonts;

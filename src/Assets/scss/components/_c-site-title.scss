@@ -1,6 +1,12 @@
 .c-site-title {
+    outline: solid 1px red;
+
+    &__icon {
+        width: 163px;
+        height: 25px;
+    }
+
     &__link {
-        color: $gold;
         font-size: $text-large;
         font-weight: $weight-bold;
         line-height: 1.2;

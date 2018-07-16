@@ -4,7 +4,7 @@
 
 .c-hamburger {
     appearance: none;
-    background-color: $hamburger-background-color;
+    //background-color: $hamburger-background-color;
     border: 0;
     border-radius: none;
     box-shadow: none;
@@ -21,7 +21,7 @@
     width: $hamburger-width;
 
     &__bar {
-        background: $hamburger-color;
+        //background: $hamburger-color;
         display: block;
         height: $hamburger-bar-thickness;
         left: $hamburger-pad;
@@ -32,7 +32,7 @@
 
         &::after,
         &::before {
-            background: $hamburger-color;
+            //background: $hamburger-color;
             content: '';
             display: block;
             height: $hamburger-bar-thickness;

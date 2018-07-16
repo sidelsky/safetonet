@@ -31,3 +31,21 @@
         }
     }
 }
+
+// scss-lint:disable Indentation
+@mixin web-font(
+  $font-name: 'FONT NAME',
+  $file-path: '/PATHTOFONT/',
+  $file-name: 'FONTNAME'
+  ){
+  $full-path: $file-path + $file-name;
+  @font-face {
+    font-family: '#{$font-name}';
+    font-style: normal;
+    font-weight: normal;
+   // Modern Browsers
+	src: url('#{$full-path}.woff') format('woff');
+   // Safari, Android, iOS
+	src: url('#{$full-path}.ttf') format('truetype');
+    }
+}

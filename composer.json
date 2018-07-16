@@ -1,10 +1,10 @@
 {
-    "name": "rbdwllr/wordpress-starter",
+    "name": "esidelsky/wordpress-starter",
     "description": "WordPress Composer Starter Repo",
     "authors": [
         {
-            "name": "Rob Waller",
-            "email": "rdwaller1984@googlemail.com"
+            "name": "Errol Sidelsky",
+            "email": "esidelsky@safetonet.com"
         }
     ],
     "repositories":[
@@ -20,7 +20,9 @@
         "vlucas/phpdotenv": "2.4.*",
         "illuminate/config": "5.5.*",
         "illuminate/filesystem": "5.5.*",
-        "rbdwllr/wordpress-salts-generator": "0.1.*"
+        "rbdwllr/wordpress-salts-generator": "0.1.*",
+        "wpackagist-plugin/admin-menu-editor": "^1.8.4",
+        "wpackagist-plugin/duplicate-page": "^2.6"
     },
     "require-dev": {
         "behat/behat": "3.4.*",
