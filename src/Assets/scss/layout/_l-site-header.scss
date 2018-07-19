@@ -1,17 +1,21 @@
+$height: 62px;
+
+.l-site-header-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba($black, .25);
+    margin-bottom: 62px;
+}
+
 .l-site-header {
     margin: 0;
-    margin-bottom: 2rem;
     overflow: hidden;
     //padding: 2rem 0;
-    width: 100%;
 
     @include breakpoint($small) {
         align-items: center;
         lost-flex-container: row;
-    }
-
-    &__wrap {
-        background: rgba($black, .25);
     }
 
     &__title {

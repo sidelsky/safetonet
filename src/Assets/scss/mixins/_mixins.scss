@@ -49,3 +49,31 @@
 	src: url('#{$full-path}.ttf') format('truetype');
     }
 }
+
+@mixin vertical-align($position: absolute, $top: 50%, $left: 50%, $scale: 1) {
+	position: $position;
+	top: $top;
+	left: $left;
+	transform: translateX(-$left) translateY(-$top) scale($scale);
+	z-index: 1;
+  }
+
+
+@mixin set-font-size($small-font: '1.8rem', $medium-font: '1.8rem', $large-font: '2.4rem', $x-large-font: '3.6rem') {
+
+	font-size: #{$small-font};
+
+	@include media('>phone') {
+		font-size: #{$medium-font};
+	}
+
+	@include media('>tablet') {
+		font-size: #{$large-font};
+	}
+
+	@include media('>desktop') {
+		font-size: #{$x-large-font};
+	}
+
+}
+

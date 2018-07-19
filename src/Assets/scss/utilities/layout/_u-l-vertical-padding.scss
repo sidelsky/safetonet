@@ -1,0 +1,13 @@
+/*
+ * Apply a default from small and medium screens upwards
+ */
+
+.u-l-vertical-padding {
+    padding-top: $spacing--large;
+    padding-top: $spacing--large;
+
+    @include breakpoint($medium) {
+        padding-top: $spacing--jumbo;
+        padding-top: $spacing--jumbo;
+    }
+}

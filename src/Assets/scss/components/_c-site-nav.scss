@@ -1,8 +1,9 @@
 // scss-lint:disable NestingDepth
 
 .c-site-nav {
-    outline: solid 1px red;
-    font-family: $font-primary--book;
+    font-family: font-family(primary, medium);
+    @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
+
     .menu-item {
         display: inline-block;
         margin-left: $spacing--tiny;

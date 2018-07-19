@@ -7,6 +7,9 @@ use App\Helper\DisableComments;
 use App\Helper\Utilities;
 use App\Helper\ProjectConfig;
 
+//Featured Image
+add_theme_support( 'post-thumbnails' );
+
 //Reset Wordpress (removes redundant scripts etc.)
     add_action('init', 'resetWordpressDefaults');
     function resetWordpressDefaults()
