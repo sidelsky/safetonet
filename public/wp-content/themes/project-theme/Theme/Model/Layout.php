@@ -3,7 +3,8 @@ namespace Theme\Model;
 
 use App\WordPress\WordPress;
 use \WP_Query;
-
+use Theme\Model\Promos;
+use Theme\Model\Features; //Add another module here
 
 class Layout {
 
@@ -11,50 +12,30 @@ class Layout {
    {
       $this->layoutBuilder = get_field('layout_builder');
       $this->layoutOutput = [];
-      $this->setPromos();
-   }
-
-
-   public function setPromos() {
       
-      foreach ($this->layoutBuilder as $layout) {
+      foreach($this->layoutBuilder as $layout) {
          $layoutName = $layout['acf_fc_layout'];
-
+         $currentLayout;
          
-         if ($layoutName === 'promo_module') {
-            $contentPosition = $layout['content_position'];
-            $acfPromoItems = $layout['promo_item'];
-            $promoItems = [];
-            $promosTitle = $layout['promo_title'];
-            $position = $layout['content_position'];
-            $promosBackground = $layout['background_image']['url'];
-         
-            // foreach($acfPromoItems as $promo) {
-            //    $promoItems[] = [
-            //       'promoTitle' => $promo['promo_item_title'],
-            //       'promoIcon' => $promo['promo_item_icon']['url'],
-            //       'promoDescription' => $promo['promo_item_description']
-            //    ];
-            // }
+         //Add another module here
+         switch ($layoutName) {
+                
+            //Get the Promos
+            case 'promo_module':
+               $promos = new Promos($layout);
+               $currentLayout = $promos->getPromos();
+               break;
 
-            $this->layout['promo_module'] = [
-               'title' => $promosTitle,
-               'background' => $promosBackground,
-               'position' => $position,
-               'items' => $promoItems
-            ];
+            //Get the Features
+            case 'features_module':
+               $features = new Features($layout);
+               $currentLayout = $features->getFeatures();
+               break;
+        }
 
-            
-         }
-
-         array_push($this->layoutOutput,$layout);
-
-         // $this->[$layout];
-
-         //print_r($this->layout);
-         //return $this->layout;
-         
+         $this->layoutOutput[] = $currentLayout;
       }
+
    }
    
    public function getLayout() {

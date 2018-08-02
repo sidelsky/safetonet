@@ -1,0 +1,15 @@
+.c-feature-card {
+   text-align: center;
+   
+   @include media('>tablet') {
+      lost-column: 4/12;
+   }
+
+   //Icon
+   &__icon {
+      display: inline;
+      margin-bottom: $spacing--small;
+   }
+
+
+}

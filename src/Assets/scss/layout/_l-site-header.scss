@@ -6,6 +6,8 @@ $height: 62px;
     top: 0;
     background: rgba($black, .25);
     margin-bottom: 62px;
+    z-index: 1;
+    padding: $spacing--tiny 0;
 }
 
 .l-site-header {

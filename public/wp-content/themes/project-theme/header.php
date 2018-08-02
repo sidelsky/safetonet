@@ -22,6 +22,13 @@ $wordpress = new WordpressHelper;
 	</head>
 
 	<body <?php body_class(); ?>>
+
+	<?php
+		/**
+		 * Theme Data
+		 */
+		include('Theme/Data/en.php');
+	?>
 		
 		<div class="l-site-header-container">
 			<div class="u-l-container u-l-horizontal-padding">

@@ -4,10 +4,10 @@
 
 .u-l-vertical-padding {
     padding-top: $spacing--large;
-    padding-top: $spacing--large;
+    padding-bottom: $spacing--large;
 
     @include breakpoint($medium) {
         padding-top: $spacing--jumbo;
-        padding-top: $spacing--jumbo;
+        padding-bottom: $spacing--jumbo;
     }
 }

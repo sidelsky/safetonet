@@ -1,7 +1,52 @@
 .c-footer {
-    //border-top: $grey-light solid 1px;
-    //margin-top: 2rem;
-    //padding-top: 2rem;
-    background-color: palette(primary, base);
     color: palette(bw, white);
+
+    //Column
+    &__column {
+        &:nth-child(1) {
+            outline: solid 1px red;
+            lost-column: 12/12;
+
+            // Tablet upwards
+            @include media('>tablet') { 
+                lost-column: 3/12;
+            }
+        }
+        &:nth-child(2) {
+            lost-column: 12/12;
+            outline: solid 1px red;
+            
+            // Tablet upwards
+            @include media('>tablet') {
+                lost-column: 9/12 0;
+            }
+        }
+    }
+
+    &__copyright {
+        @include set-font-size(1.2rem, 1.2rem, 1.2rem, 1.2rem);
+        line-height: 1.5;
+        padding-bottom: $spacing--medium;
+    }
+
+    &__inner-row {
+        lost-flex-container: row;
+    }
+
+    &__inner-column {
+        lost-column: 12/12;
+        
+        a {
+            color: palette(bw, white);
+        }
+
+        @include media('>tablet') {
+            lost-column: 3/12;
+        }
+    }
+
+    &__inner-column__item {
+        margin-bottom: $spacing--medium;
+    }
+
 }

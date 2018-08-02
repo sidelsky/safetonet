@@ -9,14 +9,12 @@
 
        &:after {
            content: "";
-           position: absolute;
-           right: 0;
-           bottom: 0;
-           left: 0;
+           //position: absolute;
            display: block;
            width: 60%;
            height: 1px;
-           background-color: currentColor;
+           background-color: rgba(palette(bw, white), .5);
+           margin-top: $spacing--large-x;
            }
        }
 
@@ -45,6 +43,15 @@
        &--h3 {
         @include set-font-size(1.6rem, 1.6rem, 2.0rem, 2.0rem);
         line-height: 1.2;
+        margin-bottom: $spacing--small;
+        font-family: font-family(primary, medium);
+    }
+
+    //very Small title
+    &--h4 {
+        @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
+        line-height: 1.2;
+        text-transform: uppercase;
         margin-bottom: $spacing--small;
         font-family: font-family(primary, medium);
     }

@@ -1,25 +1,35 @@
 <section class="u-section">
-   <div class="c-hero" <?= $data['backgroundImage'] ? 'style="background-image:url('. $data['backgroundImage'] .')"' : ''; ?> data-in-viewport>   
+   <div class="u-l-container--center" <?= $data['background'] ? 'style="background-image:url('. $data['background'] .')"' : ''; ?> data-in-viewport>   
+      <div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding">   
       
-      <div class="u-l-container u-l-horizontal-padding">
-         <div class="u-row u-row--half-width">
-            <h1 class="c-hero__title c-hero__title--uppercase c-hero__title--underline c-hero__title--large"><?= $data['title'] ?></h1>
-            <div class="c-hero__content c-hero__content--large">
-               <?= $data['content'] ?>
-               <div class="store-icons">
-                  <?php
-                     /**
-                     * App & Play icons
-                     */
-                     foreach ($data['store-icons'] as $value) {
-                        echo '<a href="'. $value['url'] .'" target="_blank" class="store-icons__href">';
-                           echo '<img src="'. get_bloginfo('template_url') . '/assets/build/img/' . $value['icon'] .'" class="store-icons__icon">';
-                        echo '</a>';
-                     }
-                  ?>
+      <!-- Content -->
+         <div class="u-column u-column--half-width <?= $data['position'] ? '' : 'u-column--half-width--right'; ?>">
+            <h2 class="c-site-headings c-site-headings--uppercase c-site-headings--underline c-site-headings--h2"><?= $data['title'] ?></h2>
+            <?php foreach($data['items'] as $promo) { ?>
+               <div class="c-promo-card">
+                  
+                  <div class="c-promo-card__icon">
+                     <img src="<?= $promo['promoIcon'] ?>" alt="<?= $promo['promoTitle'] ?>">
+                  </div>
+
+                  <div class="c-promo-card__content">
+                     <?php if( $promo['promoTitle'] ) : ?>
+                        <h3 class="c-site-headings c-site-headings--h3"><?= $promo['promoTitle'] ?></h3>
+                     <?php endif; ?>
+                     <?= $promo['promoDescription'] ?>
+                  </div>
+
                </div>
+            <?php } ?>
          </div>
+
+          <!-- Image -->
+          <?php if( $data['image'] ) : ?>
+            <div class="u-column u-column--image u-column--half-width <?= $data['position'] ? '' : 'u-column--half-width--left'; ?>">
+               <img src="<?= $data['image'] ?>" >
+            </div>   
+         <?php endif; ?>
+
       </div>
-      
    </div>
 </section>

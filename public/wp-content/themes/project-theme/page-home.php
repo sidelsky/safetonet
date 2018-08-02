@@ -12,6 +12,7 @@ $layout = new Layout;
 
 $allLayouts = $layout->getLayout();
 
+//print_r($allLayouts);
 
 include("header.php"); ?>
     
@@ -22,18 +23,24 @@ include("header.php"); ?>
     $render->view('Components/c-hero', $hero->getHero()); ?>
     
     <?php 
-        foreach($allLayouts as $key => $value) {
+        foreach($allLayouts as $value) {
 
-            // Promos
             $templateName = '';
+            
+            switch ($value['layoutName']) {
+                
+                //Get the Promos
+                case 'promo_module':
+                    $templateName = 'c-promo';
+                    break;
 
-            if ($key === 'promo_module') {
-                $templateName = 'c-layout';
+                //Get the Features
+                case 'features_module':
+                    $templateName = 'c-feature';
+                    break;
             }
 
-            //print_r($value);
-
-            //echo $render->view('Components/' . $templateName, $value);
+            echo $render->view('Components/' . $templateName, $value);
         }
     ?>
 <?php include("footer.php"); ?>
