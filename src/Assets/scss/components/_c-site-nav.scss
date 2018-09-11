@@ -14,6 +14,7 @@
             padding: $spacing--small 0;
             display: inline-block;
             position: relative;
+            transition: 0.3s all ease;
 
             &:after {
                 content: "";
@@ -24,15 +25,15 @@
                 display: block;
                 width: 0;
                 height: 2px;
-                background-color: currentColor;
                 transition: 0.3s width ease;
                 -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
-                background-color: palette(bw, white);
+                background-color: palette(quaternary, base);
             }
 
             &:hover {
                 text-decoration: none;
+                color: palette(quaternary, base);
                 
                 &:after {
                     width: 50%;

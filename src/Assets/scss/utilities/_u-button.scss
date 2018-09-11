@@ -5,6 +5,17 @@
 .u-button {
     cursor: pointer;
     user-select: none;
+    background-color: palette(quaternary, base);
+    color: palette(bw, white);
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: font-family(primary, medium);
+    padding: 0 $spacing--large;
+    line-height: 4;
+    @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
 
     &:focus {
         outline: 0;

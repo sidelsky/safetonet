@@ -29,6 +29,7 @@ $colors: (
 $primary: #3B5998; //SafeToNet Blue
 $secondary: #1AA8A8; //SafeTonet Teal
 $tertiary: #00264F; //SafeTonet Dark Blue
+$quaternary: #FFC233; //SafeTonet Yellow
 
 .color--primary {
     color: $primary;
@@ -62,6 +63,7 @@ $palettes: (
    ),
    greys: (
       base: $grey, 
+      x-light: lighten($grey, 40%),
       light: lighten($grey, 25%),
       dark: darken($grey, 25%)
    ),
@@ -79,5 +81,11 @@ $palettes: (
       base: $tertiary,
       light: lighten($tertiary, 25%),
       dark: darken($tertiary, 25%),
+      ),
+      //Yellow
+    quaternary: (
+        base: $quaternary,
+        light: lighten($quaternary, 25%),
+        dark: darken($quaternary, 25%),
       )
    );

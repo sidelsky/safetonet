@@ -5,10 +5,18 @@
       lost-column: 4/12;
    }
 
+   //Title
+   &__title {
+      color: palette(primary, base);
+   }
+
    //Icon
    &__icon {
-      display: inline;
+      background-color: palette(greys, x-light);
+      display: inline-block;
       margin-bottom: $spacing--small;
+      padding: $spacing--small;
+      border-radius: 50%;
    }
 
 

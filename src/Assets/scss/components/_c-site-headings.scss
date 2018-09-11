@@ -1,7 +1,8 @@
 .c-site-headings {
 
    font-family: font-family(primary, book);
-   color: palette(bw, white);
+   //color: palette(bw, white);
+   color: white;
 
        //Underline title
        &--underline {
@@ -11,7 +12,7 @@
            content: "";
            //position: absolute;
            display: block;
-           width: 60%;
+           width: 80%;
            height: 1px;
            background-color: rgba(palette(bw, white), .5);
            margin-top: $spacing--large-x;
@@ -28,7 +29,7 @@
            @include set-font-size(3.4rem, 4.4rem, 5.4rem, 6.4rem);
            line-height: 1;
            margin-bottom: $spacing--large;
-           padding-bottom: $spacing--large;
+           //padding-bottom: $spacing--large;
        }
 
        //Medium title
