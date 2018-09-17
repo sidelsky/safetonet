@@ -12,13 +12,13 @@ class Promos {
    }
 
    public function getPromos() {
-      $acfPromoItems = $this->layout['promo_item'];
-      $contentPosition = $this->layout['content_position'];
-      $promosBackground = $this->layout['background_image']['url'];
-      $promoItems = [];
-      $promosTitle = $this->layout['promo_title'];
-      $position = $this->layout['content_position'];
-      $image = $this->layout['image']['url'];
+        $promoItems = [];
+        $acfPromoItems = $this->layout['promo_item'];
+        $contentPosition = $this->layout['content_position'];
+        $promosBackground = $this->layout['background_image']['url'];
+        $promosTitle = $this->layout['promo_title'];
+        $position = $this->layout['content_position'];
+        $image = $this->layout['image']['url'];
    
       foreach($acfPromoItems as $promo) {
          $promoItems[] = [

@@ -21,6 +21,11 @@
         lost-flex-container: row;
     }
 
+    &--shallow {
+        margin: auto;
+        max-width: $max-width-shallow;
+    }
+
     &--narrow {
         margin: auto;
         max-width: $max-width-narrow;

@@ -1,5 +1,12 @@
 .c-footer {
     color: palette(bw, white);
+    background-color: transparent;
+    position: relative;
+
+    //Inner
+    &__inner {
+        padding-top: 166px;
+    }
 
     //Column
     &__column {
@@ -25,6 +32,7 @@
         @include set-font-size(1.2rem, 1.2rem, 1.2rem, 1.2rem);
         line-height: 1.5;
         padding-bottom: $spacing--medium;
+        text-align: center;
     }
 
     &__inner-row {
@@ -60,3 +68,83 @@
     }
 
 }
+
+//Footer curve
+.footer-curve {
+    position: absolute;
+    top: 0;
+    height: 166px;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    z-index: 0;
+ 
+ }
+
+ /**
+ * Footer CTA
+ */
+ .footer-cta {
+    padding: $spacing--large 0;
+
+    //CTA
+    &__row {
+        padding-bottom: $spacing--large;
+    }
+
+    //Column
+    &__column {
+        @include media('>tablet') {
+            lost-column: 6/12 0;
+
+            &:nth-child(2) {
+                text-align: right;
+            }
+        }
+    }
+
+    //Title
+    &__title {
+        margin-bottom: 0rem !important;
+        padding-bottom: 0rem !important;
+        @include set-font-size(2.4rem, 2.4rem, 2.4rem, 2.4rem);
+        font-family: font-family(primary, medium);
+    }
+
+    //Paragraph
+    &__paragraph {
+        @include set-font-size(1.8rem, 1.8rem, 1.8rem, 1.8rem);
+    }
+
+ }
+
+/**
+* Social Links
+*/
+ .social-links {
+     
+     //Row
+     &__row {
+        padding: $spacing--small 0;
+        text-align: right;
+    }
+
+    //Title
+    &__title {
+        @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
+        margin-right: $spacing--x-tiny;
+    }
+
+    //Icon
+    &__icon {
+        @include set-font-size(2.8rem, 2.8rem, 2.8rem, 2.8rem);
+
+        &:nth-child(1) {
+            margin-right: $spacing--x-tiny;
+        }
+
+    }
+
+ }

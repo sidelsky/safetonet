@@ -4,7 +4,9 @@ namespace Theme\Model;
 use App\WordPress\WordPress;
 use \WP_Query;
 use Theme\Model\Promos;
-use Theme\Model\Features; //Add another module here
+use Theme\Model\Features;
+use Theme\Model\Plans; 
+//Add another module here
 
 class Layout {
 
@@ -30,6 +32,12 @@ class Layout {
             case 'features_module':
                $features = new Features($layout);
                $currentLayout = $features->getFeatures();
+               break;
+
+            //Get the Features
+            case 'price_plans':
+               $plans = new Plans($layout);
+               $currentLayout = $plans->getPlans();
                break;
         }
 

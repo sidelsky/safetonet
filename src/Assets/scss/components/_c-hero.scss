@@ -48,7 +48,8 @@
    left: 0;
    right: 0;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: contain;
+   background-position: bottom center;
    z-index: 0;
 
 }

@@ -73,19 +73,23 @@
             ]
          ],
 
+        ],
+
+      //Social info
+      'social' => [
+         'facebook' => [
+            'title'  => 'facebook',
+            'url'    => 'https://en-gb.facebook.com/safetonet/',
+            'target' => '_blank',
+            'icon'   => 'facebook'
+         ],
+         'twitter' => [
+            'title'  => 'twitter',
+            'url'    => 'https://twitter.com/safetonet?lang=en',
+            'target' => '_blank',
+            'icon'   => 'twitter'
+         ]
+
       ]
-      // //Modal caption title
-      // 'moedal-caption'    => [
-      //    'closed' => 'Read caption',
-      //    'open'   => 'Close caption'
-      // ],
-      // //Social info
-      // 'social' => [
-      //    'instagram' => [
-      //       'title'  => 'instagram',
-      //       'url'    => 'http://www.instagram.com',
-      //       'target' => '_blank',
-      //       'icon'   => 'instagram'
-      //    ]
-      // ]
+
    ];

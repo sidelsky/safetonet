@@ -32,8 +32,6 @@ $render = new Render;
 		
 	</div>
 	
-<div class="hero-curve" style="background-image:url(<?php bloginfo('template_directory'); ?>/assets/build/img/curve-background.png)">
-	
-</div>
+<div class="hero-curve" style="background-image:url(<?php bloginfo('template_directory'); ?>/assets/build/img/curve-background.png)"></div>
 
 </section>

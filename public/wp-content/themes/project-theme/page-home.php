@@ -38,6 +38,11 @@ include("header.php"); ?>
                 case 'features_module':
                     $templateName = 'c-feature';
                     break;
+
+                //Get the Price Plans
+                case 'price_plans':
+                    $templateName = 'c-plan';
+                    break;
             }
 
             echo $render->view('Components/' . $templateName, $value);

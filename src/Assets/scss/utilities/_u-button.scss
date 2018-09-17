@@ -10,10 +10,11 @@
     display: inline-block;
     text-transform: uppercase;
     font-family: font-family(primary, medium);
-    padding: 0 $spacing--large;
-    line-height: 4;
+    padding: $spacing--small $spacing--large-x;
+    //line-height: 4;
     @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
-    border-radius: 100px;
+    line-height: 1.25;
+    border-radius: 50px;
     position: relative;
     z-index: 1;
 
@@ -28,4 +29,5 @@
             cursor: not-allowed;
         }
     }
+    
 }

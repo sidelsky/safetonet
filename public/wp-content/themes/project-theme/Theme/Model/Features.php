@@ -12,6 +12,7 @@ class Features {
 
    public function getFeatures() {
       $acfFeatureItems = $this->layout['feature_item'];
+      $featuresTitle = $this->layout['feature_title'];
       $featureItems = [];
    
       foreach($acfFeatureItems as $feature) {
@@ -24,6 +25,7 @@ class Features {
 
       return [
          'layoutName' => 'features_module',
+         'featuresTitle' => $featuresTitle,
          'items' => $featureItems,
       ];
    }

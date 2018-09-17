@@ -19,5 +19,31 @@
       border-radius: 50%;
    }
 
+   //Image
+   &__image {
+    display: inline-block;
+    margin-bottom: $spacing--small;
+    padding: $spacing--small;
+    max-width: 55%;
+
+    img {
+        opacity: 0.8;
+    }
+
+   }
+
+   //Blockquote
+   &__blockquote {
+
+    p {
+        margin-bottom: $spacing--small;
+    }
+
+    cite {
+
+    }
+
+   }
+
 
 }
