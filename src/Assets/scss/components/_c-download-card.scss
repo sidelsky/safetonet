@@ -1,0 +1,49 @@
+.c-download-card {
+    text-align: center;
+
+    @include media('>tablet') {
+        lost-column: 6/12 0 50px;
+     }
+
+     a {
+         display: block;
+     }
+
+     //Device Type
+     img {
+        display: inline;
+     }
+
+     //Device Type
+     &__device-type {
+         height: 450px;
+         max-height: 450px;
+         width: auto;
+         margin-bottom: $spacing--small;
+     }
+
+    //Store Logo
+    &__store-logo {
+        max-width: 125px;
+        height: auto;
+        margin-bottom: $spacing--tiny;
+    }
+   
+
+     //Detils
+     &__details {
+        color: palette(bw, base);
+        @include set-font-size(1.3rem, 1.3rem, 1.3rem, 1.3rem);
+        
+        .c-site-headings--h4 {
+            margin-bottom: $spacing--x-tiny;
+            color: palette(bw, base);
+        }
+    }
+
+    //List
+    &__list {
+        color: palette(greys, base);
+    }
+
+}
