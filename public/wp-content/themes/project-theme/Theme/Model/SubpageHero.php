@@ -1,8 +1,11 @@
 <?php
 namespace Theme\Model;
-use App\WordPress\WordPress;
 
-class Hero {
+use App\WordPress\WordPress;
+//use \WP_Query;
+
+
+class SubpageHero {
 
    public function __construct()
    {

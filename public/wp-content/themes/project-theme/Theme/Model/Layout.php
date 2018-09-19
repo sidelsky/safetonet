@@ -5,7 +5,8 @@ use App\WordPress\WordPress;
 use \WP_Query;
 use Theme\Model\Promos;
 use Theme\Model\Features;
-use Theme\Model\Plans; 
+use Theme\Model\Plans;
+use Theme\Model\Downloads; 
 //Add another module here
 
 class Layout {
@@ -34,11 +35,17 @@ class Layout {
                $currentLayout = $features->getFeatures();
                break;
 
-            //Get the Features
+            //Get the Plans
             case 'price_plans':
                $plans = new Plans($layout);
                $currentLayout = $plans->getPlans();
                break;
+
+            //Get the Downloads
+            case 'downloads':
+                $downloads = new Downloads($layout);
+                $currentLayout = $downloads->getDownloads();
+                break;
         }
 
          $this->layoutOutput[] = $currentLayout;

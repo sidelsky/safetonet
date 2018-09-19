@@ -12,21 +12,6 @@ $render = new Render;
             <div class="c-hero__content c-hero__content--large">
                <?= $data['content'] ?>
                <?= $render->view('Components/c-button'); ?>
-               <div class="store-icons">
-                  <?php
-
-                  // echo '<a href="'. $value['url'] .'" target="_blank" class="store-icons__href">';
-
-                  // echo '</a>';
-
-                  //App & Play icons
-                  // foreach ($data['store-icons'] as $value) {
-                  // echo '<a href="'. $value['url'] .'" target="_blank" class="store-icons__href">';
-                  //       echo '<img src="'. get_bloginfo('template_url') . '/assets/build/img/' . $value['icon'] .'" class="store-icons__icon">';
-                  // echo '</a>';
-                  // }
-                  ?>
-               </div>
          </div>
       </div>
 		

@@ -3,8 +3,13 @@ use App\Helper\Page;
 use App\Helper\Render;
 use App\Helper\WordpressHelper;
 
+use Theme\Model\Hero;
+use Theme\Model\SubpageHero;
+
 $page = new Page;
 $render = new Render;
+$hero = new Hero;
+$subpageHero = new SubpageHero;
 $wordpress = new WordpressHelper;
 ?>
 <!doctype html>
@@ -16,7 +21,7 @@ $wordpress = new WordpressHelper;
 		<meta charset="<?php bloginfo('charset'); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
-      <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon.png" sizes="16x16" />
+      	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon.png" sizes="16x16" />
 
 		<?php wp_head(); ?>
 	</head>
@@ -44,3 +49,17 @@ $wordpress = new WordpressHelper;
 		</div>
 
 		<main role="main">
+
+		<?php
+		/**
+		 * Render Hero
+		 */
+		
+		if( is_front_page() ) {
+			//Home page Hero
+			echo $render->view('Components/c-hero', $hero->getHero());
+		} else {
+			//Sub page Hero
+			echo $render->view('Components/c-subpage-hero', $subpageHero->getHero());
+		}  
+

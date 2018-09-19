@@ -1,0 +1,26 @@
+/** 
+* Subpage Hero
+*/
+.c-subpage-hero {
+   color: palette(bw, white);
+   background-color: palette(primary, base);
+   height: 50vh;
+   position: relative;
+
+   //Content
+   &__content {
+
+      //Large title
+      &--large {
+         @include set-font-size(2.0rem, 2.0rem, 2.0rem, 2.0rem);
+         line-height: 1.5;
+      }
+
+      p {
+         margin-bottom: $spacing--small;
+      }
+
+   }
+
+
+}

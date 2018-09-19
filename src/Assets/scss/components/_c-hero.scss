@@ -4,6 +4,7 @@
 .c-hero {
    color: palette(bw, white);
    height: 100vh;
+   position: relative;
 
    //Content
    &__content {

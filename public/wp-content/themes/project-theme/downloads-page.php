@@ -1,7 +1,7 @@
 <?php
-/*
-    Template Name: Home Page
-*/
+/**
+ * Template name: Downloads
+ */
 use App\Helper\Render;
 use Theme\Model\Layout;
 
@@ -18,7 +18,7 @@ include("header.php"); ?>
 
         foreach($allLayouts as $value) {
 
-            $templateName = '';
+            $templateName;
             
             switch ($value['layoutName']) {
                 
@@ -44,6 +44,7 @@ include("header.php"); ?>
         }
 
             echo $render->view('Components/' . $templateName, $value);
+            
         }
     ?>
 <?php include("footer.php"); ?>
