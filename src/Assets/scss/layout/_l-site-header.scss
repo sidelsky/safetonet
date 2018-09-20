@@ -4,11 +4,19 @@ $height: 62px;
     width: 100%;
     position: fixed;
     top: 0;
-    //background: rgba($black, .60);
-    background-color: palette(primary, base);
     margin-bottom: 62px;
     z-index: 1;
     padding: $spacing--tiny 0;
+    
+    //Blue
+    &--blue {
+        //background: rgba($black, .1);
+    }
+    
+    //White
+    &--white {
+        background-color: palette(primary, base);
+    }
 }
 
 .l-site-header {

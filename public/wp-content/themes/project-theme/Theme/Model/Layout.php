@@ -40,12 +40,6 @@ class Layout {
                $plans = new Plans($layout);
                $currentLayout = $plans->getPlans();
                break;
-
-            //Get the Downloads
-            case 'downloads':
-                $downloads = new Downloads($layout);
-                $currentLayout = $downloads->getDownloads();
-                break;
         }
 
          $this->layoutOutput[] = $currentLayout;

@@ -131,6 +131,18 @@
         text-align: right;
     }
 
+    //Link
+    &__link {
+        display: inline-block;
+        opacity: .7;
+        transition: opacity ease-in-out .1s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+
     //Title
     &__title {
         @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);

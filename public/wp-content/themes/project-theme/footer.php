@@ -31,7 +31,7 @@ $wordpress = new WordpressHelper;
 						<div class="u-l-container u-section-underline social-links__row">
 							<span class="social-links__title">Connect with us</span>
 							<?php foreach ($themeData['social'] as $item) { ?>
-								<a href="<?= $item['url']; ?>" target="<?= $item['target']; ?>">
+								<a class="social-links__link" href="<?= $item['url']; ?>" target="<?= $item['target']; ?>">
 									<svg class="u-icon social-links__icon">
 										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-<?= $item['icon']; ?>" viewBox="0 0 32 32"></use>
 									</svg>

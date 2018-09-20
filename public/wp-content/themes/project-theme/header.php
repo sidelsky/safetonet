@@ -35,7 +35,7 @@ $wordpress = new WordpressHelper;
 		include('Theme/Data/en.php');
 	?>
 		
-		<div class="l-site-header-container">
+		<div class="l-site-header-container <?= is_front_page() ? 'l-site-header-container--blue' : 'l-site-header-container--white'; ?>">
 			<div class="u-l-container u-l-horizontal-padding">
 				<div class="l-site-header c-site-header">
 					<div class="l-site-header__title">

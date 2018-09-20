@@ -4,21 +4,23 @@
             <?php foreach($data['downloads'] as $download) { ?>
                 <div class="c-download-card">
                     <?= $download['deviceName']; ?>
-                    <a href="/downloads">
+                    <a href="<?= $download['storeUrl'] ?>" target="_blank">
                         <div class="c-download-card__device">
+                            <img class="c-download-card__feature-image" src="<?= $download['deviceFeatureImage']; ?>">
                             <img class="c-download-card__device-type" src="<?= $download['typeOfDevice']; ?>">
-                            <!-- <img src="<?= $download['deviceFeatureImage']; ?>"> -->
                         </div>
                         <img class="c-download-card__store-logo" src="<?= $download['appStoreLogo']; ?>">
                     </a>
+                    <!-- START: Details -->
                     <div class="c-download-card__details">
-                        <h4 class="c-site-headings--h4">Minimum Requirements</h4>
+                        <h4>Minimum Requirements</h4>
                         <ul class="c-download-card__list">
                             <?php foreach($download['downloadDetails'] as $requirement) { ?>
                                 <li><?= $requirement['requirement'] ?></li>
                             <?php } ?>  
                         </ul>
                     </div>
+                    <!-- END: Details -->
                 </div>
             <?php } ?>
         </div>

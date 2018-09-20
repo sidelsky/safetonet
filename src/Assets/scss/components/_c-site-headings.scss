@@ -38,7 +38,11 @@
            margin-bottom: $spacing--large;
 
            &--small {
-            @include set-font-size(4rem, 4rem, 4rem, 4rem);
+            @include set-font-size(3.6rem, 3.6rem, 3.6rem, 3.6rem);
+            font-family: font-family(primary, medium);
+            margin-bottom: $spacing--tiny;
+            text-transform: initial;
+            color: currentColor;
            }
        }
 

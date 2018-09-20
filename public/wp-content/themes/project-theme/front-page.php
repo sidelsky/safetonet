@@ -1,7 +1,5 @@
 <?php
-/*
-    Template Name: Home Page
-*/
+
 use App\Helper\Render;
 use Theme\Model\Layout;
 

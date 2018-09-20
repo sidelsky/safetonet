@@ -7,19 +7,43 @@
 
      a {
          display: block;
-     }
 
-     //Device Type
-     img {
+         &:hover {
+             .c-download-card__device-type {
+                 transform: scale(1.025);
+                 opacity: 1;
+                 //margin-top: $spacing--tiny;
+                }
+            }
+        }
+        
+    //Device Type
+    img {
         display: inline;
-     }
+    }
 
-     //Device Type
-     &__device-type {
-         height: 450px;
-         max-height: 450px;
-         width: auto;
-         margin-bottom: $spacing--small;
+    &__device {
+        position: relative;
+    }
+    
+    //Device Type
+    &__device-type {
+        height: 450px;
+        max-height: 450px;
+        width: auto;
+        margin-bottom: $spacing--small;
+        transition: all ease-in-out .1s;
+        position: relative;
+
+    }
+
+     //Feaure Image
+     &__feature-image {
+         position: absolute;
+         top: 70px;
+         left: 19px;
+         width: 176px;
+         
      }
 
     //Store Logo
@@ -34,10 +58,10 @@
      &__details {
         color: palette(bw, base);
         @include set-font-size(1.3rem, 1.3rem, 1.3rem, 1.3rem);
+        line-height: 1.50;
         
-        .c-site-headings--h4 {
+        h4 {
             margin-bottom: $spacing--x-tiny;
-            color: palette(bw, base);
         }
     }
 
@@ -45,5 +69,12 @@
     &__list {
         color: palette(greys, base);
     }
+
+
+    &:nth-child(2) {
+        .c-download-card__feature-image {
+            top: 40px;
+        }
+     }
 
 }
