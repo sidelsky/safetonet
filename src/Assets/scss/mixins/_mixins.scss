@@ -77,3 +77,49 @@
 
 }
 
+
+
+//Keep the aspect ratio fixed for certain elements. i.e. Video
+ 
+/* aspect ratio  | padding-bottom value
+--------------|----------------------
+    16:9      |       56.25%
+    4:3       |       75%
+    3:2       |       66.66%
+    8:5       |       62.5%
+ 
+@include aspect-ratio(3,2); */
+ 
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+ 
+    &::before {
+        content: '';
+        display: block;
+        padding-top: ($height / $width) * 100%;
+        width: 100%;
+    }
+ 
+    .canvas {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+}
+
+@mixin absolute-center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+   
+  @mixin vertical-align($position: relative, $top: 50%) {
+    position: $position;
+    top: $top;
+    // -webkit-transform: translateY(-50%);
+    // -ms-transform: translateY(-50%);
+    transform: translateY(-$top);
+  }

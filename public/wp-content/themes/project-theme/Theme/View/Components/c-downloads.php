@@ -1,7 +1,7 @@
 <section class="u-section u-bg-color--bw-white">
     <div class="u-l-container--center u-l-container--small" data-in-viewport>
         <div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding--small">
-            <?php foreach($data['downloads'] as $download) { ?>
+            <?php foreach($data['deviceList'] as $download) { ?>
                 <div class="c-download-card">
                     <?= $download['deviceName']; ?>
                     <a href="<?= $download['storeUrl'] ?>" target="_blank">

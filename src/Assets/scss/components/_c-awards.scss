@@ -1,0 +1,45 @@
+.c-awards {
+    padding: $spacing--small;
+    text-align: center;
+    background-image: url('img/reath.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include aspect-ratio(3,2);
+    outline: solid 1px red;
+    background-size: contain;
+
+    // Tablet upwards
+    @include media('>tablet') {
+        //lost-column: 3/12 0 0px no-flex;
+        lost-column: 3/12 0 0px;
+    }
+
+    //Canvas
+    .canvas {
+        outline: solid 1px blue;
+        @include vertical-align();
+        position: absolute;
+        //@include absolute-center;
+    }
+
+    //Title
+    &__title {
+        @include set-font-size(1.8rem, 1.8rem, 1.8rem, 1.8rem);
+        color: palette(primary, base);
+        font-family: font-family(primary, medium);
+        text-transform: uppercase;
+        
+        &:after {
+            display: block;
+            height: 1px;
+            background-color: palette(greys, light);
+        }
+    }
+
+    //Description
+    &__description {
+        @include set-font-size(1.2rem, 1.2rem, 1.2rem, 1.2rem);
+        color: palette(greys, base);
+    }
+
+}

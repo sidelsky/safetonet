@@ -1,19 +1,20 @@
 <?php
 /**
- * Template name: Downloads
+ * Template name: Industry Recognition
  */
 use App\Helper\Render;
-use Theme\Model\Downloads;
+use Theme\Model\Awards;
 
 $render = new Render;
-$downloads = new Downloads();
+$awards = new Awards();
 
 include("header.php"); ?>
     
     <?php
-        $template = 'c-downloads';
-        $data = $downloads->getData();
+        //Awards
+        $template = 'c-awards';
+        $data = $awards->getData();
         echo $render->view('Components/' . $template, $data);
-
     ?>
+
 <?php include("footer.php"); ?>

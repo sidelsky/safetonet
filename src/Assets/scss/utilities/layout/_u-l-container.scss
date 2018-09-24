@@ -16,6 +16,7 @@
     margin: auto;
     max-width: $max-width;
     width: 100%;
+    lost-utility: clearfix;
 
     &--row {
         lost-flex-container: row;
