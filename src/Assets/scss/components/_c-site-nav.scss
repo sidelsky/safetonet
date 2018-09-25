@@ -42,13 +42,29 @@
 
         }
 
-        &.current_page_item {
+        //Active menu items
+        &.current-page-ancestor a, 
+        &.current_page_item a {
+            
+            text-decoration: none;
+            color: palette(quaternary, base);
+
+            &:after {
+                width: 50%;
+            }
+
+        }
+        
+    }
+
+    //Subnavigation
+    &--subnavigation {
+        text-align: right;
+
+        .menu-item {
+            
             a {
-                text-decoration: none;
-                color: palette(quaternary, base);
-                &:after {
-                    width: 50%;
-                }
+                color:  palette(greys, base);
             }
         }
     }

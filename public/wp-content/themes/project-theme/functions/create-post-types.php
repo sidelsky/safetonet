@@ -12,7 +12,11 @@
         //CustomPostType::createPostType('FAQ', 'FAQs');
 
         $instance = new CustomPostType();
-        $instance->createPostType('FAQ', 'FAQs');
+        $instance->createPostType('FAQs', 'FAQs', $args=[
+            'hierarchical' => true,
+            'has_archive' => false,
+            'menu_icon' => 'dashicons-welcome-learn-more'
+        ]);
 
     }
 

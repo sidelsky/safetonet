@@ -42,10 +42,41 @@ $wordpress = new WordpressHelper;
 						<?= $render->view('Components/c-site-title', $wordpress->getBlogInfo('title')); ?>
 					</div>
 					<div class="l-site-header__nav">
-						<?= $render->view('Components/c-site-nav'); ?>
+						<?php
+							$menu_args = [
+								'menu' => 'Primary navigation',
+								'container' => '',
+								'echo' => true,
+								'items_wrap' => '<ul class="c-site-nav__menu">%3$s</ul>'
+							];
+							echo '<nav class="c-site-nav">';
+								wp_nav_menu($menu_args); 
+							echo '</nav>';
+						?>
 					</div>
 				</div>
 			</div>
+			
+			<?php 
+			$parent =[
+				'support' => 315
+			];
+			if (is_tree($parent['support'])) { ?>
+				<div class="u-l-container u-l-horizontal-padding subnavigation-wrapper" style="background-color: white; margin-bottom: -1rem;">
+					<?php
+						$menu_args = [
+							'menu' => 'Secondary navigation',
+							'container' => '',
+							'echo' => true,
+							'items_wrap' => '<ul class="c-site-nav__menu">%3$s</ul>'
+						];
+						echo '<nav class="c-site-nav c-site-nav--subnavigation">';
+							wp_nav_menu($menu_args); 
+						echo '</nav>';
+					?>
+				</div>
+			<?php } ?>
+
 		</div>
 
 		<main role="main">

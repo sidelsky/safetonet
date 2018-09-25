@@ -14,7 +14,7 @@ class CustomPostType
     use WordPress;
 
     //Custom post type function
-    public function createPostType($titleSingle=false, $titlePlural=false, $args=array())
+    public function createPostType($titleSingle=false, $titlePlural=false, $args=[])
     {
         //If we've set a single and plural title
         if ($titleSingle && $titlePlural) {
@@ -36,14 +36,15 @@ class CustomPostType
                     'not_found_in_trash' => __('No '.$titlePlural.' found in Trash', $titleSlug)
                 ),
                 'public' => true,
-                'hierarchical' => true,
-                'has_archive' => true,
-                'menu_icon' =>  null,
+                'hierarchical' => $args['hierarchical'],
+                'has_archive' => $args['has_archive'],
+                'menu_icon' =>  $args['menu_icon'],
                 'supports' => array(
+                    'page-attributes',
                     'title',
                     'editor',
-                    'excerpt',
-                    'thumbnail'
+                    'thumbnail',
+                    'revisions'
                 ),
                 'taxonomies' => array(),
                 'can_export' => true
