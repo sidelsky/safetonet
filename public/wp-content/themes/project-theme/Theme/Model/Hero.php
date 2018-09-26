@@ -9,21 +9,29 @@ class Hero {
       
    }
 
+   //app_store_url
+
    public function getHero() {
+
+	$appStoreUrl = get_field('app_store_url', 'option');
+	$playStoreUrl = get_field('play_store_url', 'option');
+
       return [
          'title' => get_the_title(),
          'content' => apply_filters('the_content', get_the_content()),
          'backgroundImage' => get_the_post_thumbnail_url(),
-        //  'store-icons' => [
-        //     'app-store' => [
-        //        'icon' => 'iOS-App-Store-Badge.png',
-        //        'url' => 'http://www.appstore.com',
-        //     ],
-        //     'play-store' => [
-        //        'icon' => 'Play-App-Store-Badge.png',
-        //        'url' => 'http://www.google.com'
-        //     ]
-        //  ]
+         'store-icons' => [
+            'app-store' => [
+            	'title' => 'iOS App Store',
+            	'icon' => 'iOS-App-Store-Badge.png',
+            	'url' => $appStoreUrl,
+            ],
+            'play-store' => [
+				'title' => 'Google Play Store',
+            	'icon' => 'Play-App-Store-Badge.png',
+            	'url' => $playStoreUrl
+            ]
+         ]
       ];
    }
 }

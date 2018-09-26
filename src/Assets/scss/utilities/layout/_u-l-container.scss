@@ -17,6 +17,7 @@
     max-width: $max-width;
     width: 100%;
     lost-utility: clearfix;
+    position: relative;
 
     &--row {
         lost-flex-container: row;
@@ -61,7 +62,8 @@
  .u-column {
      margin: 0 auto;
      lost-flex-container: row;
-
+    
+     //Half width
      &--half-width {
          
          // Tablet upwards
@@ -78,6 +80,24 @@
 
         }
     }
+
+    //Two thirds
+    &--two-thirds {
+         
+        // Tablet upwards
+        @include media('>tablet') { 
+           lost-column: 2/3;
+
+           &--left {
+               lost-move: -2/3;
+           }
+           
+           &--right {
+               lost-move: 2/3;
+           }
+
+       }
+   }
 
     &--image {
         img {

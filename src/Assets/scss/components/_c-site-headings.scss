@@ -33,7 +33,7 @@
  
        //Large title
        &--h1 {
-           @include set-font-size(3.4rem, 4.4rem, 5.4rem, 6.4rem);
+           @include set-font-size(4.4rem, 5.4rem, 6.4rem, 7.4rem);
            line-height: 1;
            margin-bottom: $spacing--large;
 
