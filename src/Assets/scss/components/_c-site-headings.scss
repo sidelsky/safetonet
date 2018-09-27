@@ -28,7 +28,6 @@
         &--text-align-center {
             text-align: center;
             width: 100%;
-            outline: solid 1px red;
         }
  
        //Large title
@@ -38,8 +37,8 @@
            margin-bottom: $spacing--large;
 
            &--small {
-            @include set-font-size(3.6rem, 3.6rem, 3.6rem, 3.6rem);
-            font-family: font-family(primary, medium);
+            @include set-font-size(3.6rem, 3.6rem, 3.6rem, 4rem);
+            font-family: font-family(primary, book);
             margin-bottom: $spacing--tiny;
             text-transform: initial;
             color: currentColor;

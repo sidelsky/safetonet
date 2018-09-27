@@ -60,6 +60,7 @@
     //Subnavigation
     &--subnavigation {
         text-align: right;
+        font-family: font-family(primary, book);
 
         .menu-item {
             
@@ -70,4 +71,25 @@
     }
 }
 
+//Subnavigation Wrapper
+.subnavigation-wrapper {
+    background-color: palette(greys, xx-light);
+    margin-bottom: -1rem;
+    position: relative;
+    margin: 0 -30px;
 
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 9600px;
+        right: 100%;
+        background-color: palette(greys, xx-light);
+    }
+
+    &::after { 
+        left: 100%;
+      }
+}

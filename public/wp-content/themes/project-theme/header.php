@@ -62,7 +62,7 @@ $wordpress = new WordpressHelper;
 				'support' => 315
 			];
 			if (is_tree($parent['support'])) { ?>
-				<div class="u-l-container u-l-horizontal-padding subnavigation-wrapper" style="background-color: white; margin-bottom: -1rem;">
+				<div class="u-l-container u-l-horizontal-padding subnavigation-wrapper">
 					<?php
 						$menu_args = [
 							'menu' => 'Secondary navigation',

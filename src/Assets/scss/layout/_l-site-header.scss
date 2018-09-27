@@ -4,9 +4,9 @@ $height: 62px;
     width: 100%;
     position: fixed;
     top: 0;
-    margin-bottom: 62px;
+    margin-bottom: $height;
     z-index: 1;
-    padding: $spacing--tiny 0;
+    line-height: 2.5;
     transition: all ease-in-out 300ms;
     
     //Blue

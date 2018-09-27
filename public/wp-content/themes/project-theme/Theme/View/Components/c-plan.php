@@ -8,7 +8,7 @@
             <?php foreach($data['plans'] as $plan) { ?>
                 <div class="c-plan-card">
                     <div class="c-plan-card__header">
-                        <img class="c-plan-card__logo-mark" src="<?= $plan['planIcon'] ?>" >
+                        <img class="c-plan-card__logo-mark" src="<?= $plan['planIcon'] ?>" alt="<?= $plan['planTitle'] ?>">
                         <h3 class="c-plan-card__title"><?= $plan['planTitle'] ?></h3>
                         <p class="c-plan-card__description"><?= $plan['planDescription'] ?></p>
                     </div>

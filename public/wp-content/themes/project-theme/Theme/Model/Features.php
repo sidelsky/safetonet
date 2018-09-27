@@ -18,6 +18,7 @@ class Features {
       foreach($acfFeatureItems as $feature) {
          $featureItems[] = [
             'featureIcon' => $feature['icon']['url'],
+            'alt' => $feature['icon']['alt'],
             'featureTitle' => $feature['title'],
             'featureDescription' => $feature['description']
          ];

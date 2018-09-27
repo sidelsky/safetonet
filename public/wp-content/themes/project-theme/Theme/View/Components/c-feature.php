@@ -21,7 +21,7 @@
 				if( $extensionTypeIs == 'svg' ) {?>
 					<div class="c-feature-card">
 						<span class="c-feature-card__icon">
-							<img src="<?= $feature['featureIcon']; ?>" >
+							<img src="<?= $feature['featureIcon']; ?>" alt="<?= $feature['alt']; ?> Icon">
 						</span>
 						<h3 class="c-site-headings--h3 c-feature-card__title"><?= $feature['featureTitle'] ?></h3>
 						<?= $feature['featureDescription'] ?>
@@ -29,7 +29,7 @@
 				<?php } else {?>
 					<div class="c-feature-card">
 						<span class="c-feature-card__image">
-							<img src="<?= $feature['featureIcon']; ?>" >
+							<img src="<?= $feature['featureIcon']; ?>" alt="<?= $feature['alt']; ?> logo">
 						</span>
 						<blockquote class="c-feature-card__blockquote">
 							<?= $feature['featureDescription'] ?>

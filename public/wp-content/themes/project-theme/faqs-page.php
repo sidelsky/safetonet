@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Template name: FAQs
@@ -21,17 +20,18 @@ include("header.php");
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post();
             ?>
-            <a href="<?php echo the_permalink(); ?>" style="display:block"><?php the_title(); ?></a>
-                    
+                <div class="c-faqs">
+                    <a class="c-faqs__title accordion"><?php the_title(); ?></a>
+                    <div class="c-faqs__details">
+                        <div class="c-faqs__content">
+                            <?php the_content(); ?>
+                        </div>     
+                    </div>     
+                </div>
+
             <?php
 			endwhile; 
 			?>
-
-        <?php /*
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <?php the_title(); ?>
-            <?php endwhile; endif; ?>
-        */ ?>
 
         </div>
     </div>
