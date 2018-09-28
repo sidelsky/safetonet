@@ -5,9 +5,9 @@
     margin-bottom: $spacing--medium;
     
     //Tablet and up
-    @include media('>tablet') {
-        column-count: 2;
-    }
+    // @include media('>tablet') {
+    //     column-count: 2;
+    // }
 
     p {
         margin-bottom: $spacing--medium;

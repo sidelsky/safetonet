@@ -2,12 +2,11 @@
 * Subpage Hero
 */
 .c-subpage-hero {
-    // color: palette(bw, white);
     background-color: palette(greys, xx-light);
     color: palette(primary, base);
     padding: 180px 0 120px;
-    //padding: 160px 0 60px;
     position: relative;
+    margin-bottom: $spacing--small;
 
    //Content
    &__content {

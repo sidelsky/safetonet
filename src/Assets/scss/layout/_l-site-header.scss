@@ -5,9 +5,13 @@ $height: 62px;
     position: fixed;
     top: 0;
     margin-bottom: $height;
-    z-index: 1;
+    z-index: 3;
     line-height: 2.5;
     transition: all ease-in-out 300ms;
+    
+    @include media('<desktop') {
+        background-color: palette(primary, base);
+    }
     
     //Blue
     &--blue {
@@ -23,16 +27,21 @@ $height: 62px;
 .l-site-header {
     margin: 0;
     overflow: hidden;
-
-    @include breakpoint($small) {
+    padding: $spacing--tiny 0;
+    
+    @include media('>phone') {
         align-items: center;
         lost-flex-container: row;
+    }
+
+    @include media('>desktop') {
+        padding: 0;
     }
 
     &__title {
         //margin-bottom: 1rem;
 
-        @include breakpoint($small) {
+        @include media('>phone') {
             lost-column: 1/4;
             margin-bottom: 0;
         }
@@ -41,7 +50,7 @@ $height: 62px;
     &__nav {
         margin-bottom: 1rem;
 
-        @include breakpoint($small) {
+        @include media('>phone') {
             lost-column: 3/4;
             margin-bottom: 0;
             text-align: right;
@@ -49,7 +58,7 @@ $height: 62px;
     }
 
     &__social {
-        @include breakpoint($small) {
+        @include media('>phone') {
             lost-column: 1/4;
         }
     }

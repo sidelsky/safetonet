@@ -24,7 +24,9 @@ var w = window,
         title = document.getElementById("title");
         top = w.scrollY;
 
-        title.style.transform = "translateY(" + +top / distance + "px)";
+        if(title) {
+            title.style.transform = "translateY(" + +top / distance + "px)";
+        }
 
     }
 

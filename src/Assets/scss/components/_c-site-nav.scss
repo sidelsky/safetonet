@@ -3,15 +3,20 @@
 .c-site-nav {
     font-family: font-family(primary, medium);
     @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
-
+    display: block;    
+    
+    @include media('<desktop') {
+        display: none;
+    }
+    
     .menu-item {
         display: inline-block;
         margin-left: $spacing--tiny;
         text-transform: uppercase;
         
         a {
-            color:  palette(bw, white);
             padding: $spacing--small 0;
+            color:  palette(bw, white);
             display: inline-block;
             position: relative;
             transition: 0.3s all ease;
@@ -63,7 +68,6 @@
         font-family: font-family(primary, book);
 
         .menu-item {
-            
             a {
                 color:  palette(greys, base);
             }

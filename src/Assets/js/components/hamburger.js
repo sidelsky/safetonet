@@ -3,7 +3,8 @@
  * toggle the css class "body--menu-is-expanded" to document body. This class can be used
  * to style mobile menu and hamburger.
  */
-export default class {
+
+export default class Hamburger {
     constructor() {
         this.body = document.querySelector('body');
         this.menuTrigger = document.querySelector('.js-hamburger');
