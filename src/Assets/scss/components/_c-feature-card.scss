@@ -1,8 +1,10 @@
 .c-feature-card {
    text-align: center;
+   margin-bottom: $spacing--medium;
    
    @include media('>tablet') {
       lost-column: 4/12;
+      margin-bottom: 0;
    }
 
    //Title

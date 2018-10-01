@@ -13,7 +13,7 @@
 
         $instance = new CustomPostType();
         $instance->createPostType('FAQs', 'FAQs', $args=[
-            'hierarchical' => true,
+            'hierarchical' => false,
             'has_archive' => false,
             'menu_icon' => 'dashicons-welcome-learn-more'
         ]);

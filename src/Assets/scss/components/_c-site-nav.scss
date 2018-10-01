@@ -3,11 +3,6 @@
 .c-site-nav {
     font-family: font-family(primary, medium);
     @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
-    display: block;    
-    
-    @include media('<desktop') {
-        display: none;
-    }
     
     .menu-item {
         display: inline-block;
@@ -50,7 +45,6 @@
         //Active menu items
         &.current-page-ancestor a, 
         &.current_page_item a {
-            
             text-decoration: none;
             color: palette(quaternary, base);
 
@@ -81,19 +75,25 @@
     margin-bottom: -1rem;
     position: relative;
     margin: 0 -30px;
+    display: none;
 
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 9600px;
-        right: 100%;
-        background-color: palette(greys, xx-light);
+    @include media('>tablet') {
+        display: blocksite-title;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 9600px;
+            right: 100%;
+            background-color: palette(greys, xx-light);
+        }
+    
+        &::after { 
+            left: 100%;
+          }
+
     }
-
-    &::after { 
-        left: 100%;
-      }
 }

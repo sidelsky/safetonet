@@ -1,18 +1,32 @@
-var acc = document.getElementsByClassName("accordion"),
-i,
-panel;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
+export default class Accordion {
+    
+    constructor() {
+        this.accordionTrigger = document.getElementsByClassName('accordion');
         
-        this.parentElement.classList.toggle("active");
+        for (let i = 0; i < this.accordionTrigger.length; i++) {
+            let currentElement = this.accordionTrigger[i];
+            currentElement.addEventListener('click', (e) => this.handleClick(e) );
+        }
+        
+    }
+    
+    handleClick(e) {
+        e.target.parentElement.classList.toggle('active')
+    }
 
-        //panel = this.nextElementSibling;
-
-        // if (panel.style.display === "block") {
-        //     //panel.style.display = "none";
-        // } else {
-        //     //panel.style.display = "block";
-        // }
-    });
 }
+
+
+
+
+/*
+    var acc = document.getElementsByClassName("accordion"),
+    i,
+    panel;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.parentElement.classList.toggle("active");
+        });
+    }
+*/

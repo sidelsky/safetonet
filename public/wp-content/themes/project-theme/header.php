@@ -110,6 +110,8 @@ $wordpress = new WordpressHelper;
 		if( is_front_page() ) {
 			//Home page Hero
 			echo $render->view('Components/c-hero', $hero->getHero());
+		} elseif( !is_page_template() ) {
+
 		} else {
 			//Sub page Hero
 			echo $render->view('Components/c-subpage-hero', $subpageHero->getHero());

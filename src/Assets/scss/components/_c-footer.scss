@@ -67,6 +67,16 @@
 
     }
 
+    //Footer logo
+    .c-site-title__name {
+        display: none;
+
+        @include media('>tablet') {
+            display: block
+        }
+            
+    }
+
 }
 
 //Footer curve
@@ -116,6 +126,12 @@
     //Paragraph
     &__paragraph {
         @include set-font-size(1.8rem, 1.8rem, 1.8rem, 1.8rem);
+        margin-bottom: $spacing--medium;
+
+        @include media('>tablet') {
+            margin-bottom: 0;
+          }
+
     }
 
  }
@@ -128,7 +144,11 @@
      //Row
      &__row {
         padding: $spacing--small 0;
-        text-align: right;
+        
+        @include media('>tablet') {
+            text-align: right;
+          }
+
     }
 
     //Link

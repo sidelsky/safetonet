@@ -5,12 +5,21 @@
 
    //Icon
    &__icon {
-      lost-column: 1.5/12;
+      lost-column: 2/12;
+
+      @include media('>tablet') {
+        lost-column: 1.5/12;
+      }
+
    }
 
    //Content
    &__content {
-      lost-column: 10.5/12;
+      lost-column: 10/12;
+
+      @include media('>tablet') {
+        lost-column: 10.5/12;
+      }
 
       p {
          @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);

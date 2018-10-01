@@ -12,7 +12,10 @@ include("header.php");
         <div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding">   
     
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <?php the_title(); ?>
+            <?php
+            the_title(); 
+            echo '<span class="chevron"></span>'
+            ?>
         <?php endwhile; endif; ?>
 
         </div>

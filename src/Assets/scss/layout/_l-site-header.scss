@@ -1,13 +1,17 @@
 $height: 62px;
 
 .l-site-header-container {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    margin-bottom: $height;
     z-index: 3;
     line-height: 2.5;
     transition: all ease-in-out 300ms;
+    position: relative;
+
+    @include media('>tablet') {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        margin-bottom: $height;
+    }
     
     @include media('<desktop') {
         background-color: palette(primary, base);
@@ -49,6 +53,12 @@ $height: 62px;
 
     &__nav {
         margin-bottom: 1rem;
+
+        display: block;    
+    
+        @include media('<desktop') {
+            display: none;
+        }
 
         @include media('>phone') {
             lost-column: 3/4;

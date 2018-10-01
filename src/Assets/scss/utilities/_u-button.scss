@@ -11,8 +11,7 @@
     text-transform: uppercase;
     font-family: font-family(primary, medium);
     padding: $spacing--small $spacing--large-x;
-    //line-height: 4;
-    @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
+    @include set-font-size(1.2rem, 1.4rem, 1.4rem, 1.4rem);
     line-height: 1.25;
     border-radius: 50px;
     position: relative;

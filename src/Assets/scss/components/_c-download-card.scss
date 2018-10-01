@@ -1,7 +1,12 @@
 .c-download-card {
     text-align: center;
+    lost-column: 6/12 0 15px;
 
-    @include media('>tablet') {
+    @include media('>phone') {
+        lost-column: 6/12 0 15px;
+     }
+
+     @include media('>tablet') {
         lost-column: 6/12 0 50px;
      }
 
@@ -28,8 +33,8 @@
     
     //Device Type
     &__device-type {
-        height: 450px;
-        max-height: 450px;
+        // height: 450px;
+        // max-height: 450px;
         width: auto;
         margin-bottom: $spacing--small;
         transition: all ease-in-out .1s;
@@ -42,7 +47,8 @@
          position: absolute;
          top: 70px;
          left: 19px;
-         width: 176px;
+         //width: 176px;
+         width: 84%;
          
      }
 
