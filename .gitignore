@@ -35,3 +35,4 @@ Vagrantfile
 yarn-error.log
 composer.lock
 yarn.lock
+/public/wp-content/ai1wm-backups
