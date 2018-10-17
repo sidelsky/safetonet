@@ -50,7 +50,7 @@ class MaintenanceMode extends MaintenanceMode_SWGPluginFramework {
 			# 1. Display information on login/logout screen when Maintenance Mode is activated.
 			############
 			$msg = '<div id="login_error"><p>'.__('The Maintenance Mode is active.',$this->g_info['ShortName']).'</p></div>';
-			add_filter( 'login_message', create_function( '', 'return \'' . $msg . '\';' ));
+			//add_filter( 'login_message', create_function( '', 'return \'' . $msg . '\';' ));
 			############
 			# 2. Display information in administration when Maintenance Mode is activated.
 			############
@@ -63,7 +63,7 @@ class MaintenanceMode extends MaintenanceMode_SWGPluginFramework {
 						$link_to_mamo_opt = __("Please don't forget to", $this->g_info['ShortName']) . ' <a href="admin.php?page=' . basename($this->g_info['PluginFile']) . '">' . __('deactivate', $this->g_info['ShortName']) . '</a> ' . __('it as soon as you are done.', $this->g_info['ShortName']);
 					}
 					$msg = '<div class="error"><p>' . __("The Maintenance Mode is active.",$this->g_info['ShortName']) . ' ' . $link_to_mamo_opt . '</p></div>';
-					add_action('admin_notices', $c = create_function('', 'echo "' . addcslashes($msg,'"') . '";')); // We use addcslashes otherwise it causes a parse error when the $msg contains a single quote
+					//add_action('admin_notices', $c = create_function('', 'echo "' . addcslashes($msg,'"') . '";')); // We use addcslashes otherwise it causes a parse error when the $msg contains a single quote
 				}
 			}
 

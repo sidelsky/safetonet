@@ -71,14 +71,15 @@
 
 //Subnavigation Wrapper
 .subnavigation-wrapper {
-    background-color: palette(greys, xx-light);
+    //background-color: palette(greys, xx-light);
+    background: red;
     margin-bottom: -1rem;
     position: relative;
     margin: 0 -30px;
-    display: none;
+    //display: none;
 
     @include media('>tablet') {
-        display: blocksite-title;
+        display: block;
 
         &::before,
         &::after {
