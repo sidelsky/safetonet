@@ -1,0 +1,86 @@
+.gform_wrapper {
+    width: 100%;
+
+    ul.gform_fields li.gfield{
+        padding: 0 !important;
+        margin-bottom: $spacing--medium;
+    }
+
+    .ginput_container {
+    }
+
+    input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+        width: 100%;
+    }
+
+    label {
+        text-transform: uppercase;
+        font-family: font-family(primary, regular);
+        @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+        color: palette(greys, dark);
+        display: block;
+    }
+
+    .gfield_required {
+        color: red;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea  {
+        border: 0;
+        border-bottom: 1px solid palette(greys, light);
+        line-height: 1.8;
+        color: palette(greys, dark);
+        @include set-font-size(1.8rem, 1.8rem, 1.8rem, 1.8rem);
+        transition: all ease-in-out 300ms;
+        
+        &:focus {
+            //background-color: palette(greys, xxx-light);
+            border-bottom: 1px solid palette(greys, base);
+            @include set-font-size(2.8rem, 2.8rem, 2.8rem, 2.8rem);
+        }
+    }
+
+    textarea  {
+        transition: all ease-in-out 300ms;
+        height: 90px!important;
+
+        &:focus {
+            @include set-font-size(2.8rem, 2.8rem, 2.8rem, 2.8rem);
+        }
+    }
+
+    select {
+        font-family: font-family(primary, regular);
+        @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+        line-height: 1;
+        border: 0;
+        border-bottom: 1px solid palette(greys, light);
+        background: transparent;
+        background: url(img/chev.png) no-repeat right center;
+        height: 40px;
+        width: 100%;
+     }
+ 
+
+}
+
+
+.validation_message {
+    color: $error;
+    @include set-font-size(1.2rem, 1.2rem, 1.2rem, 1.2rem);
+    padding-top: $spacing--x-tiny;
+}
+
+.gform_confirmation_wrapper {
+    padding: 30px;
+    background-color: lighten($success, 60%);
+    width: 100%;
+    text-align: center;
+}
+
+.gform_confirmation_message {
+    color: $success;
+}

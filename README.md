@@ -53,6 +53,10 @@ Once Yarn has installed all the required dependencies you can build your JavaScr
 yarn run dev
 ```
 
+
+yarn watch
+```
+
 ## Theme
 
 The WordPress starter project comes with a pre-built base theme stored in the `./public/wp-content/themes/project-theme` directory.

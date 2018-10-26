@@ -7,4 +7,3 @@ import Accordion from './components/accordion';
 new Accordion();
 
 import './components/header';
-//import './components/accordion';

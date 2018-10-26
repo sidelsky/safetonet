@@ -2,7 +2,7 @@
  * Button utility
  */
 
-.u-button {
+.u-button, input[type="submit"] {
     cursor: pointer;
     user-select: none;
     background-color: palette(quaternary, base);
@@ -28,4 +28,8 @@
         }
     }
     
+}
+
+input[type="submit"] {
+    padding: $spacing--x-small $spacing--medium;
 }
