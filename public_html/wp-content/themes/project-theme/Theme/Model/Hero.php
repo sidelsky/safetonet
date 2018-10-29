@@ -27,7 +27,7 @@ class Hero {
             	'url' => $appStoreUrl,
             ],
             'play-store' => [
-				'title' => 'Google Play Store',
+			'title' => 'Google Play Store',
             	'icon' => 'Play-App-Store-Badge.png',
             	'url' => $playStoreUrl
             ]
