@@ -1552,6 +1552,11 @@ table {
   bottom: 200px;
 }
 
+.store-icons {
+  position: relative;
+  z-index: 1;
+}
+
 .store-icons__href {
   display: inline-block;
   margin-right: 1rem;
@@ -1577,13 +1582,21 @@ table {
 .hero-curve {
   position: absolute;
   bottom: 0;
-  height: 140px;
+  height: 30px;
   left: 0;
   right: 0;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
   z-index: 0;
+}
+
+@media (min-width: 376px) {
+  .hero-curve {
+    height: 100px;
+    background-size: 100%;
+    bottom: -5px;
+  }
 }
 
 .c-mobile-navigation {

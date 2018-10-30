@@ -78,6 +78,8 @@
 
 //Store icons
 .store-icons {
+  position: relative;
+  z-index: 1;
 
    &__href{
       display: inline-block;
@@ -106,7 +108,7 @@
 .hero-curve {
    position: absolute;
    bottom: 0;
-   height: 140px;
+   height: 30px;
    left: 0;
    right: 0;
    background-repeat: no-repeat;
@@ -114,4 +116,9 @@
    background-position: bottom center;
    z-index: 0;
 
+   @include media('>phone') {
+    height: 100px;
+    background-size: 100%;
+    bottom: -5px;
+   }
 }
