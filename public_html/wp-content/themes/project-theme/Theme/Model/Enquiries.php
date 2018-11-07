@@ -14,13 +14,17 @@ class Enquiries {
 		
 		$optimisedEnquiriesList = [];
 
-		foreach($enquiries as $details) {
-            
-            $optimisedEnquiriesList[] = [
-                'enquiry' => $details['enquiry'],
-            ];
+		if( $enquiries ) {
 
-        }
+			foreach($enquiries as $details) {
+            
+				$optimisedEnquiriesList[] = [
+					'enquiry' => $details['enquiry'],
+				];
+	
+			}
+
+		}
 
 		return $optimisedEnquiriesList;
 

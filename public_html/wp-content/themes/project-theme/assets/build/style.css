@@ -153,6 +153,26 @@ table {
 
 .c-additional-text p {
   margin-bottom: 3rem;
+  font-size: 1.8rem;
+  line-height: 1.75;
+}
+
+@media (min-width: 376px) {
+  .c-additional-text p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-additional-text p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .c-additional-text p {
+    font-size: 1.8rem;
+  }
 }
 
 .c-awards {
@@ -584,7 +604,7 @@ table {
 .c-faqs {
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: solid 1px #f0f0f0;
+  border-bottom: solid 1px #d7d6d6;
   position: relative;
 }
 
@@ -723,7 +743,7 @@ table {
 }
 
 .c-feature-card__icon {
-  background-color: #f0f0f0;
+  background-color: whitesmoke;
   display: inline-block;
   margin-bottom: 2rem;
   padding: 2rem;
@@ -1183,15 +1203,17 @@ table {
 }
 
 .gform_wrapper .gfield_required {
-  color: red;
+  color: #d8000c;
 }
 
+.gform_wrapper input,
 .gform_wrapper input[type="text"],
 .gform_wrapper input[type="tel"],
 .gform_wrapper input[type="email"],
 .gform_wrapper textarea {
+  font-family: "gotham-rounded-book", Helvetica, Arial, sans-serif;
   border: 0;
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 1px solid #d7d6d6;
   line-height: 1.8;
   color: #4a4a4a;
   font-size: 1.8rem;
@@ -1200,6 +1222,7 @@ table {
 }
 
 @media (min-width: 376px) {
+  .gform_wrapper input,
   .gform_wrapper input[type="text"],
   .gform_wrapper input[type="tel"],
   .gform_wrapper input[type="email"],
@@ -1209,6 +1232,7 @@ table {
 }
 
 @media (min-width: 769px) {
+  .gform_wrapper input,
   .gform_wrapper input[type="text"],
   .gform_wrapper input[type="tel"],
   .gform_wrapper input[type="email"],
@@ -1218,6 +1242,7 @@ table {
 }
 
 @media (min-width: 1025px) {
+  .gform_wrapper input,
   .gform_wrapper input[type="text"],
   .gform_wrapper input[type="tel"],
   .gform_wrapper input[type="email"],
@@ -1226,6 +1251,48 @@ table {
   }
 }
 
+.gform_wrapper input::-webkit-input-placeholder,
+.gform_wrapper input[type="text"]::-webkit-input-placeholder,
+.gform_wrapper input[type="tel"]::-webkit-input-placeholder,
+.gform_wrapper input[type="email"]::-webkit-input-placeholder,
+.gform_wrapper textarea::-webkit-input-placeholder {
+  color: #cacaca;
+  -webkit-transition: all ease-in-out 500ms;
+  transition: all ease-in-out 500ms;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 376px) {
+  .gform_wrapper input::-webkit-input-placeholder,
+  .gform_wrapper input[type="text"]::-webkit-input-placeholder,
+  .gform_wrapper input[type="tel"]::-webkit-input-placeholder,
+  .gform_wrapper input[type="email"]::-webkit-input-placeholder,
+  .gform_wrapper textarea::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .gform_wrapper input::-webkit-input-placeholder,
+  .gform_wrapper input[type="text"]::-webkit-input-placeholder,
+  .gform_wrapper input[type="tel"]::-webkit-input-placeholder,
+  .gform_wrapper input[type="email"]::-webkit-input-placeholder,
+  .gform_wrapper textarea::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .gform_wrapper input::-webkit-input-placeholder,
+  .gform_wrapper input[type="text"]::-webkit-input-placeholder,
+  .gform_wrapper input[type="tel"]::-webkit-input-placeholder,
+  .gform_wrapper input[type="email"]::-webkit-input-placeholder,
+  .gform_wrapper textarea::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+}
+
+.gform_wrapper input:focus,
 .gform_wrapper input[type="text"]:focus,
 .gform_wrapper input[type="tel"]:focus,
 .gform_wrapper input[type="email"]:focus,
@@ -1235,6 +1302,7 @@ table {
 }
 
 @media (min-width: 376px) {
+  .gform_wrapper input:focus,
   .gform_wrapper input[type="text"]:focus,
   .gform_wrapper input[type="tel"]:focus,
   .gform_wrapper input[type="email"]:focus,
@@ -1244,6 +1312,7 @@ table {
 }
 
 @media (min-width: 769px) {
+  .gform_wrapper input:focus,
   .gform_wrapper input[type="text"]:focus,
   .gform_wrapper input[type="tel"]:focus,
   .gform_wrapper input[type="email"]:focus,
@@ -1253,40 +1322,25 @@ table {
 }
 
 @media (min-width: 1025px) {
+  .gform_wrapper input:focus,
   .gform_wrapper input[type="text"]:focus,
   .gform_wrapper input[type="tel"]:focus,
   .gform_wrapper input[type="email"]:focus,
   .gform_wrapper textarea:focus {
     font-size: 2.8rem;
   }
+}
+
+.gform_wrapper input:focus::-webkit-input-placeholder,
+.gform_wrapper input[type="text"]:focus::-webkit-input-placeholder,
+.gform_wrapper input[type="tel"]:focus::-webkit-input-placeholder,
+.gform_wrapper input[type="email"]:focus::-webkit-input-placeholder,
+.gform_wrapper textarea:focus::-webkit-input-placeholder {
+  text-indent: -100%;
 }
 
 .gform_wrapper textarea {
-  -webkit-transition: all ease-in-out 300ms;
-  transition: all ease-in-out 300ms;
   height: 90px !important;
-}
-
-.gform_wrapper textarea:focus {
-  font-size: 2.8rem;
-}
-
-@media (min-width: 376px) {
-  .gform_wrapper textarea:focus {
-    font-size: 2.8rem;
-  }
-}
-
-@media (min-width: 769px) {
-  .gform_wrapper textarea:focus {
-    font-size: 2.8rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  .gform_wrapper textarea:focus {
-    font-size: 2.8rem;
-  }
 }
 
 .gform_wrapper select {
@@ -1294,7 +1348,7 @@ table {
   font-size: 1.5rem;
   line-height: 1;
   border: 0;
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 1px solid #d7d6d6;
   background: transparent;
   background: url(img/chev.png) no-repeat right center;
   height: 40px;
@@ -1317,6 +1371,75 @@ table {
   .gform_wrapper select {
     font-size: 1.5rem;
   }
+}
+
+.gform_wrapper .gfield_checkbox li {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.gform_wrapper .gfield_checkbox li label a {
+  color: currentColor;
+  text-decoration: underline;
+}
+
+.gform_wrapper .gfield_checkbox li label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 11px;
+  border: solid 1px #FFC233;
+  border-width: 0 3px 3px 0;
+  left: 6px;
+  top: 4px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+
+.gform_wrapper .gfield_checkbox li label:after {
+  content: '';
+  background: #cacaca;
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  z-index: 0;
+}
+
+.gform_wrapper input[type="checkbox"] {
+  opacity: 0;
+  outline: none;
+  z-index: 100;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+.gform_wrapper input[type="checkbox"] + label {
+  cursor: pointer;
+}
+
+.gform_wrapper input[type="checkbox"]:checked + label:before {
+  opacity: 1;
+  top: 3px;
+}
+
+.gform_wrapper input[type="checkbox"]:checked + label:after {
+  background: #3B5998;
 }
 
 .validation_message {
@@ -1352,6 +1475,10 @@ table {
 
 .gform_confirmation_message {
   color: #4f8a10;
+}
+
+.gform_wrapper .gfield_checkbox label {
+  text-transform: initial;
 }
 
 /*
@@ -1492,7 +1619,7 @@ table {
 @media (min-width: 769px) {
   .c-hero {
     padding: 120px 0;
-    height: 90vh;
+    height: 100vh;
     display: block;
   }
 }
@@ -1632,7 +1759,7 @@ table {
   margin-bottom: 2rem;
   padding-bottom: 2rem;
   display: block;
-  border-bottom: solid 1px #f0f0f0;
+  border-bottom: solid 1px #d7d6d6;
 }
 
 @media (min-width: 376px) {
@@ -2356,7 +2483,7 @@ body.body--menu-is-expanded .c-mobile-navigation {
   color: #3B5998;
   padding: 40px 0 30px;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 769px) {
@@ -2769,6 +2896,8 @@ table {
   .l-site-header-container {
     width: 100%;
     position: fixed;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
     top: 0;
     margin-bottom: 62px;
   }
@@ -2912,7 +3041,7 @@ table {
 }
 
 .u-bg-color--greys-x-light {
-  background: #f0f0f0;
+  background: #d7d6d6;
 }
 
 .u-bg-color--greys-light {
@@ -3020,6 +3149,10 @@ table {
 
 .u-button--disabled:hover, input[type="submit"]\--disabled:hover {
   cursor: not-allowed;
+}
+
+.u-button--small {
+  padding: 1rem 2rem;
 }
 
 input[type="submit"] {

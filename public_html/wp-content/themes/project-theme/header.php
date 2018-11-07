@@ -78,26 +78,49 @@ $wordpress = new WordpressHelper;
 				</div>
 			</div>
 			
-			<?php 
+			<?php
+
+			// Page IDs from WordPress
 			$parent =[
-				'support' => 315
+				'about' => [
+					'pageId' => 2,
+					'navName' => 'Quaternary navigation'
+				],
+				'contact' => [
+					'pageId' => 315,
+					'navName' => 'Secondary navigation'
+				]
 			];
+
+			echo '<div class="u-l-container u-l-horizontal-padding subnavigation-wrapper">';
+
+				if ( is_tree( $parent['about']['pageId'] ) ) {
+					$menu_args = [
+						'menu' => $parent['about']['navName'],
+						'container' => '',
+						'echo' => true,
+						'items_wrap' => '<ul class="c-site-nav__menu">%3$s</ul>'
+					];
+					echo '<nav class="c-site-nav c-site-nav--subnavigation">';
+						wp_nav_menu($menu_args); 
+					echo '</nav>';
+				} elseif( is_tree( $parent['contact']['pageId']) ) {
+					$menu_args = [
+						'menu' => $parent['contact']['navName'],
+						'container' => '',
+						'echo' => true,
+						'items_wrap' => '<ul class="c-site-nav__menu">%3$s</ul>'
+					];
+					echo '<nav class="c-site-nav c-site-nav--subnavigation">';
+						wp_nav_menu($menu_args); 
+					echo '</nav>';
+				}; 
+
+
+			echo '</div>';
+
+			?>
 			
-			if (is_tree($parent['support'])) { ?>
-				<div class="u-l-container u-l-horizontal-padding subnavigation-wrapper">
-					<?php
-						$menu_args = [
-							'menu' => 'Secondary navigation',
-							'container' => '',
-							'echo' => true,
-							'items_wrap' => '<ul class="c-site-nav__menu">%3$s</ul>'
-						];
-						echo '<nav class="c-site-nav c-site-nav--subnavigation">';
-							wp_nav_menu($menu_args); 
-						echo '</nav>';
-					?>
-				</div>
-			<?php } ?>
 
 		</div>
 

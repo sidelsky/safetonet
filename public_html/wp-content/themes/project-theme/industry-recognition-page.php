@@ -13,7 +13,6 @@ $additionalText = new AdditionalText();
 include("header.php"); ?>
     
     <?php
-
         //Additional Text
         $template = 'c-additional-text';
         $data = $additionalText->getData();

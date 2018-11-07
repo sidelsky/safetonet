@@ -15,6 +15,7 @@ class Plans {
 	   $pricePlanTitle = $this->layout['price_plan_title'];
 	   $pricePlanDescription = $this->layout['price_plan_description'];
 	   $acfPlans = $this->layout['plans'];
+	   $show = $this->layout['show'];
 	   $plans = [];
 	   
 	   foreach($acfPlans as $plan) {
@@ -42,6 +43,7 @@ class Plans {
         'layoutName' => 'price_plans',
 		'pricePlanTitle' => $pricePlanTitle,
 		'pricePlanDescription' => $pricePlanDescription,
+		'showPlans' => $show,
 		'plans' => $plans,
       ];
    }

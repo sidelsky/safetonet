@@ -1,12 +1,17 @@
 <?php
-use Theme\Model\Single;
+
 use App\Helper\Render;
+use Theme\Model\Downloads;
 
 $render = new Render;
+$downloads = new Downloads();
 
-include("header.php");
-
-$single = new Single($post->ID);
-echo $render->view('components/c-single-post', $single->getSingle());
-
-include("footer.php");
+include("header.php"); ?>
+    
+    <?php
+        $template = 'c-downloads';
+        $data = $downloads->getData();
+        echo $render->view('Components/' . $template, $data);
+    ?>
+    
+<?php include("footer.php"); ?>

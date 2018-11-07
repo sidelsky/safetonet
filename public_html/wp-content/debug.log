@@ -4645,3 +4645,115 @@ Stack trace:
 [26-Oct-2018 14:37:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/contact-page.php on line 35
 [26-Oct-2018 14:59:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/contact-page.php on line 37
 [26-Oct-2018 15:12:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/post-types-order/include/class.options.php:40) in /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-admin/includes/misc.php on line 1126
+[06-Nov-2018 09:29:30 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/update.php on line 347
+[06-Nov-2018 09:29:36 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/update.php on line 529
+[06-Nov-2018 09:29:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/update.php:347) in /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-admin/includes/misc.php on line 1126
+[06-Nov-2018 12:32:05 UTC] PHP Notice:  Use of undefined constant php - assumed 'php' in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/footer.php on line 15
+[06-Nov-2018 12:35:17 UTC] PHP Notice:  Use of undefined constant php - assumed 'php' in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/footer.php on line 15
+[06-Nov-2018 13:07:51 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 369
+[06-Nov-2018 13:07:51 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 369
+[06-Nov-2018 13:07:51 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 370
+[06-Nov-2018 13:07:51 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 371
+[06-Nov-2018 13:07:51 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 371
+[06-Nov-2018 13:07:51 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 369
+[06-Nov-2018 13:07:51 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 369
+[06-Nov-2018 13:07:51 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 370
+[06-Nov-2018 13:07:51 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 371
+[06-Nov-2018 13:07:51 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 371
+[06-Nov-2018 13:08:04 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 369
+[06-Nov-2018 13:08:04 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 369
+[06-Nov-2018 13:08:04 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 370
+[06-Nov-2018 13:08:04 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 371
+[06-Nov-2018 13:08:04 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 371
+[06-Nov-2018 13:08:11 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 369
+[06-Nov-2018 13:08:11 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 369
+[06-Nov-2018 13:08:11 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 370
+[06-Nov-2018 13:08:11 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 371
+[06-Nov-2018 13:08:11 UTC] PHP Notice:  Trying to get property of non-object in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 371
+[06-Nov-2018 13:12:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Awards.php on line 17
+[06-Nov-2018 13:17:00 UTC] PHP Notice:  Undefined index: contact in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 86
+[06-Nov-2018 13:18:25 UTC] PHP Fatal error:  Cannot use [] for reading in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 87
+[06-Nov-2018 13:18:39 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:18:49 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:20:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[06-Nov-2018 13:20:19 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:21:59 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:22:05 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:22:20 UTC] PHP Notice:  Undefined variable: downloads in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/page.php on line 11
+[06-Nov-2018 13:22:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getData() on null in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/page.php:11
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/page.php on line 11
+[06-Nov-2018 13:26:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[06-Nov-2018 13:26:32 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:29:21 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:29:28 UTC] PHP Notice:  Undefined index: title in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-subpage-hero.php on line 6
+[06-Nov-2018 13:29:28 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:30:43 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:31:53 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:32:10 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:32:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[06-Nov-2018 13:32:20 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:33:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[06-Nov-2018 13:33:16 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:34:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[06-Nov-2018 13:34:10 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:35:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[06-Nov-2018 13:35:34 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[06-Nov-2018 13:36:55 UTC] PHP Notice:  Undefined variable: additionalText in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 14
+[06-Nov-2018 13:36:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getData() on null in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php:14
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 14
+[07-Nov-2018 11:13:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Enquiries.php on line 17
+[07-Nov-2018 11:13:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Enquiries.php on line 17
+[07-Nov-2018 11:13:53 UTC] PHP Notice:  Undefined index: enquiriesList in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-enquiries.php on line 4
+[07-Nov-2018 11:13:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-enquiries.php on line 4
+[07-Nov-2018 11:14:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Enquiries.php on line 17
+[07-Nov-2018 11:14:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Enquiries.php on line 17
+[07-Nov-2018 12:40:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[07-Nov-2018 12:40:52 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[07-Nov-2018 12:42:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[07-Nov-2018 12:42:12 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[07-Nov-2018 16:22:08 UTC] PHP Notice:  Undefined variable: parent in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 89
+[07-Nov-2018 16:22:36 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:22:36 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:23:46 UTC] PHP Notice:  Undefined variable: parent in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 89
+[07-Nov-2018 16:24:19 UTC] PHP Notice:  Undefined variable: parent in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 89
+[07-Nov-2018 16:24:22 UTC] PHP Notice:  Undefined variable: parent in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 89
+[07-Nov-2018 16:26:16 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:26:16 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:27:32 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:27:32 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:31:47 UTC] PHP Parse error:  syntax error, unexpected ''frequently-asked-questions'' (T_CONSTANT_ENCAPSED_STRING) in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 89
+[07-Nov-2018 16:35:42 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 98
+[07-Nov-2018 16:36:46 UTC] PHP Notice:  Undefined index: parentPage in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:36:46 UTC] PHP Notice:  Undefined index: navigationName in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 122
+[07-Nov-2018 16:36:58 UTC] PHP Notice:  Undefined index: parentPage in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:36:58 UTC] PHP Notice:  Undefined index: navigationName in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 122
+[07-Nov-2018 16:40:05 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:40:05 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:40:29 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:40:29 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:40:44 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:40:44 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:41:12 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:41:12 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:41:23 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:41:23 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:41:28 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:41:28 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:42:12 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:42:12 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 16:42:16 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 114
+[07-Nov-2018 16:42:16 UTC] PHP Notice:  Undefined variable: pageArgs in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 118
+[07-Nov-2018 17:27:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[07-Nov-2018 17:27:21 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[07-Nov-2018 17:27:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[07-Nov-2018 17:27:26 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1

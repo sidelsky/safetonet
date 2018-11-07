@@ -1,16 +1,17 @@
 .c-additional-text {
-    //@include set-font-size(1.8rem, 1.6rem, 1.6rem, 1.8rem);
     //color: palette(primary, base);
     font-family: font-family(primary, book);
     margin-bottom: $spacing--medium;
     
     //Tablet and up
     // @include media('>tablet') {
-    //     column-count: 2;
-    // }
-
-    p {
-        margin-bottom: $spacing--medium;
+        //     column-count: 2;
+        // }
+        
+        p {
+            margin-bottom: $spacing--medium;
+            @include set-font-size(1.8rem, 1.8rem, 1.8rem, 1.8rem);
+            line-height: 1.75;
     }
 
 }

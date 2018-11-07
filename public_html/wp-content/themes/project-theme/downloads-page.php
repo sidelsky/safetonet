@@ -14,6 +14,6 @@ include("header.php"); ?>
         $template = 'c-downloads';
         $data = $downloads->getData();
         echo $render->view('Components/' . $template, $data);
-
     ?>
+    
 <?php include("footer.php"); ?>

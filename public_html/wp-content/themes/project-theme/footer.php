@@ -12,33 +12,10 @@ $wordpress = new WordpressHelper;
 				<div class="c-footer__inner">
 
 					<!-- Footer CTA -->
-					<?php if( !is_page('downloads') ) : ?>
-						<div class="footer-cta u-bg-color--primary-base u-l-horizontal-padding">
-							<div class="u-l-container u-l-container--row u-section-underline footer-cta__row">
-								<div class="footer-cta__column">
-									<h2 class="footer-cta__title">Ready to get started?</h2>
-									<p class="footer-cta__paragraph">Download the App to start your FREE trial.</p>
-								</div>
-								<div class="footer-cta__column">
-									<?= $render->view('Components/c-button'); ?>
-								</div>
-							</div>
-						</div>
-					<?php endif; ?>
+					<?php /* include('partials/footer-cta.php'); */ ?>
 
 					<!-- Social links -->
-					<div class="social-links u-bg-color--primary-base u-l-horizontal-padding">
-						<div class="u-l-container u-section-underline social-links__row">
-							<span class="social-links__title">Connect with us</span>
-							<?php foreach ($themeData['social'] as $item) { ?>
-								<a class="social-links__link" href="<?= $item['url']; ?>" target="<?= $item['target']; ?>">
-									<svg class="u-icon social-links__icon">
-										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-<?= $item['icon']; ?>" viewBox="0 0 32 32"></use>
-									</svg>
-								</a>
-							<?php }?>
-						</div>	
-					</div>
+					<?php include('partials/social-icons.php'); ?>
 
 					<div class="u-bg-color--primary-base u-l-horizontal-padding u-l-vertical-padding--small">
 
@@ -95,6 +72,14 @@ $wordpress = new WordpressHelper;
 		echo $render->view('Components/' . $template, $data);
 
 		?>
+
+		<!-- 
+			Chat 
+			<div class="chat">
+				<div class="chat__button"></div>
+				<div class="chat__modal"></div>
+			</div>
+		-->
 		
 	</body>
 </html>

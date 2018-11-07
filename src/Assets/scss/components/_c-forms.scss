@@ -7,6 +7,7 @@
     }
 
     .ginput_container {
+        //None
     }
 
     input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
@@ -22,34 +23,40 @@
     }
 
     .gfield_required {
-        color: red;
+        color: $error;
     }
 
+    input,
     input[type="text"],
     input[type="tel"],
     input[type="email"],
     textarea  {
+        font-family: font-family(primary, regular);
         border: 0;
-        border-bottom: 1px solid palette(greys, light);
+        border-bottom: 1px solid palette(greys, x-light);
         line-height: 1.8;
         color: palette(greys, dark);
         @include set-font-size(1.8rem, 1.8rem, 1.8rem, 1.8rem);
         transition: all ease-in-out 300ms;
+
+        &::-webkit-input-placeholder {
+            color: palette(greys, light);
+            transition: all ease-in-out 500ms;
+            @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
+        }
         
         &:focus {
-            //background-color: palette(greys, xxx-light);
             border-bottom: 1px solid palette(greys, base);
             @include set-font-size(2.8rem, 2.8rem, 2.8rem, 2.8rem);
+
+            &::-webkit-input-placeholder {
+				text-indent: -100%;
+			}
         }
     }
 
     textarea  {
-        transition: all ease-in-out 300ms;
         height: 90px!important;
-
-        &:focus {
-            @include set-font-size(2.8rem, 2.8rem, 2.8rem, 2.8rem);
-        }
     }
 
     select {
@@ -57,12 +64,90 @@
         @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
         line-height: 1;
         border: 0;
-        border-bottom: 1px solid palette(greys, light);
+        border-bottom: 1px solid palette(greys, x-light);
         background: transparent;
         background: url(img/chev.png) no-repeat right center;
         height: 40px;
         width: 100%;
-     }
+    }
+
+    $dimentions: 18px;
+
+    .gfield_checkbox {
+		li {
+			position: relative;
+            padding-left: $spacing--x-medium;
+
+			label {
+
+                a {
+                    color: currentColor;
+                    text-decoration: underline;
+                }
+             
+				&:before {
+					content: '';
+					display: block;
+				    position: absolute;
+                    width: 5px;
+                    height: 11px;
+				    border: solid 1px palette(quaternary, base);
+				    border-width: 0 3px 3px 0;
+			    	left: 6px;
+					top: 4px;
+					transform: rotate(45deg);
+					opacity:0;
+					z-index:1;
+					transition:all 100ms;
+                }
+
+				&:after {
+					content: '';
+                    background: palette(greys, light);
+					width: $dimentions;
+					height: $dimentions;
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					border-radius: 3px;
+					z-index: 0;
+                }
+                
+			}
+		}
+
+	}
+
+	input[type="checkbox"] {
+		opacity:0;
+		outline: none;
+		z-index: 100;
+        width: $dimentions;
+        height: $dimentions;
+		top: 0;
+		left: 0;
+		position: absolute;
+		appearance: none;
+        cursor: pointer;
+        
+    + label {
+        cursor: pointer;
+    }
+
+		&:checked + label {
+
+            &:before {
+				opacity:1;
+				top: 3px;
+            }
+
+            &:after {
+                background: palette(primary, base);
+            }
+            
+		}
+	}
  
 
 }
@@ -83,4 +168,11 @@
 
 .gform_confirmation_message {
     color: $success;
+}
+
+//Checkbox
+.gform_wrapper .gfield_checkbox {
+    label {
+        text-transform: initial;
+    }
 }

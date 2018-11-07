@@ -9,6 +9,7 @@ $height: 62px;
     @include media('>tablet') {
         width: 100%;
         position: fixed;
+        transform: translateZ(0);
         top: 0;
         margin-bottom: $height;
     }

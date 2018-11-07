@@ -12,7 +12,7 @@ $render = new Render;
             <div class="c-hero__content c-hero__content--large">
                <?= $data['content'] ?>
                <? /* $render->view('Components/c-button'); */ ?>
-               <div class="store-icons">
+               <!-- <div class="store-icons"> -->
                   <?php
                   /**
                    * App & Play icons
@@ -23,7 +23,7 @@ $render = new Render;
                   echo '</a>';
                   }
                   ?>
-               </div>
+               <!-- </div> -->
          </div>
       </div>
       </div>

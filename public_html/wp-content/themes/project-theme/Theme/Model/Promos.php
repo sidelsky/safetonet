@@ -3,7 +3,6 @@ namespace Theme\Model;
 
 use App\WordPress\WordPress;
 
-
 class Promos {
 
    public function __construct($layout)
@@ -19,6 +18,7 @@ class Promos {
         $promosTitle = $this->layout['promo_title'];
         $position = $this->layout['content_position'];
         $image = $this->layout['image']['url'];
+        $show = $this->layout['show'];
    
       foreach($acfPromoItems as $promo) {
          $promoItems[] = [
@@ -34,7 +34,8 @@ class Promos {
          'title' => $promosTitle,
          'position' => $position,
          'image' => $image,
-         'background' => $promosBackground
+         'background' => $promosBackground,
+         'showPromo' => $show
       ];
    }
 }

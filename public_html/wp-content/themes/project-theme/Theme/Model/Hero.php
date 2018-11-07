@@ -23,12 +23,14 @@ class Hero {
          'store-icons' => [
             'app-store' => [
             	'title' => 'iOS App Store',
-            	'icon' => 'iOS-App-Store-Badge.png',
+                //'icon' => 'iOS-App-Store-Badge.png',
+                'icon' => 'apple_icon.svg',
             	'url' => $appStoreUrl,
             ],
             'play-store' => [
 			'title' => 'Google Play Store',
-            	'icon' => 'Play-App-Store-Badge.png',
+                //'icon' => 'Play-App-Store-Badge.png',
+                'icon' => 'googleplay_icon.svg',
             	'url' => $playStoreUrl
             ]
          ]

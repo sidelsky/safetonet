@@ -47,7 +47,7 @@ include("header.php"); ?>
                                     'id' => $id,
                                     'title' => 'true',
                                     'description' => 'true',
-                                    'ajax' => 'true'
+                                    'ajax' => 'false'
                                 ];
 
                                 $template = 'c-contact-form';

@@ -14,8 +14,8 @@ include("header.php");
             $args = [
                 'post_type' => 'faqs',
                 'posts_per_page' => -1,
-                'orderby' => 'post_date',
-                'order' => 'DEC'
+                'orderby' => NULL,
+                'order' => NULL
             ];
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post();
