@@ -12,10 +12,25 @@
         //CustomPostType::createPostType('FAQ', 'FAQs');
 
         $instance = new CustomPostType();
+
         $instance->createPostType('FAQs', 'FAQs', $args=[
             'hierarchical' => false,
             'has_archive' => false,
-            'menu_icon' => 'dashicons-welcome-learn-more'
+            'menu_icon' => 'dashicons-welcome-learn-more',
+            'rewrite' => [
+                'slug' => FALSE,
+                'with_front' => TRUE
+            ]
+        ]);
+
+        $instance->createPostType('Campaign', 'Campaigns', $args=[
+            'hierarchical' => false,
+            'has_archive' => false,
+            'menu_icon' => 'dashicons-welcome-view-site',
+            'rewrite' => [
+                'slug' => 'campaigns',
+                'with_front' => TRUE
+            ]
         ]);
 
     }

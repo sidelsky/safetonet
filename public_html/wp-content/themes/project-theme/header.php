@@ -120,9 +120,8 @@ $wordpress = new WordpressHelper;
 			echo '</div>';
 
 			?>
-			
-
 		</div>
+
 
 		<main role="main" class="main">
 
@@ -134,8 +133,9 @@ $wordpress = new WordpressHelper;
 		if( is_front_page() ) {
 			//Home page Hero
 			echo $render->view('Components/c-hero', $hero->getHero());
-		} elseif( !is_page_template() ) {
-
+		} elseif( is_page_template() ) {
+			//Sub page Hero
+			echo $render->view('Components/c-subpage-hero', $subpageHero->getHero());
 		} else {
 			//Sub page Hero
 			echo $render->view('Components/c-subpage-hero', $subpageHero->getHero());

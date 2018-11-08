@@ -16,13 +16,6 @@ include("header.php"); ?>
     <div class="u-l-container--center u-l-container" data-in-viewport>
         <div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding--small">
 
-            <!-- <div class="align-center">
-                <h1 class="c-site-headings c-site-headings--uppercase c-site-headings--h1 c-site-headings--h1--small">Get in Touch</h1>
-                    <div class="c-hero__content c-hero__content--large">
-                    <p>Please select an area of interest</p>
-                </div>
-            </div> -->
-
             <div class="tabs">
 
                 <?php 
@@ -45,7 +38,7 @@ include("header.php"); ?>
                                 //Contact Form
                                 $formData = [
                                     'id' => $id,
-                                    'title' => 'true',
+                                    'title' => 'false',
                                     'description' => 'true',
                                     'ajax' => 'false'
                                 ];

@@ -175,6 +175,16 @@ table {
   }
 }
 
+.c-additional-text p a {
+  color: currentColor;
+  text-decoration: underline;
+}
+
+.c-additional-text img {
+  max-width: 100%;
+  height: auto;
+}
+
 .c-awards {
   text-align: center;
   background-image: url("img/reath.png");
@@ -341,6 +351,40 @@ table {
   }
 }
 
+.c-campaign-banner {
+  color: #fff;
+  width: 100%;
+  padding: 2rem;
+  background-color: #3b5998;
+  text-align: center;
+  border-radius: 20px;
+}
+
+@media (min-width: 376px) {
+  .c-campaign-banner {
+    border-radius: 100px;
+  }
+}
+
+.c-campaign-banner__title {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.c-campaign-banner__button {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 376px) {
+  .c-campaign-banner__button {
+    width: 30%;
+  }
+}
+
 .c-contact {
   margin-bottom: 2rem;
   line-height: 1.75;
@@ -431,6 +475,11 @@ table {
 .c-contact__title {
   font-family: "gotham-rounded-medium", Helvetica, Arial, sans-serif;
   color: #3B5998;
+}
+
+.cookie-notice-container a:not(.u-button) {
+  color: currentColor;
+  text-decoration: underline;
 }
 
 .c-download-card {
@@ -1373,6 +1422,33 @@ table {
   }
 }
 
+.gform_wrapper .gfield_html {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 376px) {
+  .gform_wrapper .gfield_html {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .gform_wrapper .gfield_html {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .gform_wrapper .gfield_html {
+    font-size: 1.5rem;
+  }
+}
+
+.gform_wrapper .gfield_html a {
+  color: currentColor;
+  text-decoration: underline;
+}
+
 .gform_wrapper .gfield_checkbox li {
   position: relative;
   padding-left: 2.5rem;
@@ -2188,7 +2264,7 @@ body.body--menu-is-expanded .c-mobile-navigation {
 }
 
 .c-site-headings--h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
@@ -2245,6 +2321,12 @@ body.body--menu-is-expanded .c-mobile-navigation {
   .c-site-headings--h2--feature {
     font-size: 2.4rem;
   }
+}
+
+.c-site-headings--h2--campaign-banner {
+  color: #fff;
+  padding-bottom: 0;
+  margin-bottom: 1.5rem;
 }
 
 .c-site-headings--h2--has-subcopy {
@@ -2334,7 +2416,7 @@ body.body--menu-is-expanded .c-mobile-navigation {
 
 .c-site-nav .menu-item {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 2rem;
   text-transform: uppercase;
 }
 
@@ -2372,13 +2454,16 @@ body.body--menu-is-expanded .c-mobile-navigation {
   width: 50%;
 }
 
-.c-site-nav .menu-item.current-page-ancestor a,
+.c-site-nav .menu-item.current-page-ancestor a {
+  text-decoration: none;
+  color: #FFC233;
+}
+
 .c-site-nav .menu-item.current_page_item a {
   text-decoration: none;
   color: #FFC233;
 }
 
-.c-site-nav .menu-item.current-page-ancestor a:after,
 .c-site-nav .menu-item.current_page_item a:after {
   width: 50%;
 }
@@ -3428,6 +3513,62 @@ input[type="submit"] {
   }
 }
 
+.single-campaign p, .single-campaign h2, .single-campaign h3, .single-campaign h4 {
+  text-align: center;
+}
+
+.single-campaign h2, .single-campaign h3 {
+  color: #3B5998;
+  font-family: "gotham-rounded-medium", Helvetica, Arial, sans-serif;
+  margin-bottom: 3rem;
+}
+
+.single-campaign h2 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+}
+
+@media (min-width: 376px) {
+  .single-campaign h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .single-campaign h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .single-campaign h2 {
+    font-size: 3rem;
+  }
+}
+
+.single-campaign h3 {
+  font-size: 1.8rem;
+  line-height: 1.35;
+}
+
+@media (min-width: 376px) {
+  .single-campaign h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .single-campaign h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .single-campaign h3 {
+    font-size: 2.4rem;
+  }
+}
+
 /*
  * Reset default form styling for browser consistency
  */
@@ -3495,6 +3636,14 @@ input[type="submit"] {
 .privacypolicy tr td {
   padding: 6px 24px;
   border-top: 1px solid #eee;
+}
+
+.error404 .c-additional-text {
+  width: 100%;
+}
+
+.error404 .c-additional-text p {
+  text-align: center;
 }
 
 body.is-scrolled > .header {

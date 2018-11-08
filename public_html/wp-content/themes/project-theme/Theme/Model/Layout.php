@@ -6,7 +6,8 @@ use \WP_Query;
 use Theme\Model\Promos;
 use Theme\Model\Features;
 use Theme\Model\Plans;
-use Theme\Model\Downloads; 
+//use Theme\Model\Downloads; 
+use Theme\Model\CampaignBanner; 
 //Add another module here
 
 class Layout {
@@ -39,6 +40,12 @@ class Layout {
             case 'price_plans':
                $plans = new Plans($layout);
                $currentLayout = $plans->getPlans();
+               break;
+
+            //Get the campaign banner
+            case 'campaign_banner':
+               $campaignBanner = new CampaignBanner($layout);
+               $currentLayout = $campaignBanner->getCampaignBanner();
                break;
         }
 

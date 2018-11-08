@@ -2,7 +2,7 @@
     <div class="u-l-container u-l-container--shallow" data-in-viewport>
         <div class="u-l-container u-l-container--row u-l-horizontal-padding">
             <div class="c-additional-text">
-                <?= $data['additionalTextItem']; ?>
+                <?= $data['content'] ?>
             </div>
         </div>
     </div>

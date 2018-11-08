@@ -8,7 +8,7 @@ include("header.php");
 
 <section class="u-section">
     <div class="u-l-container--center">   
-        <div class="u-l-container u-l-horizontal-padding u-l-vertical-padding">
+        <div class="u-l-container u-l-horizontal-padding">
 
         	<?php
             $args = [

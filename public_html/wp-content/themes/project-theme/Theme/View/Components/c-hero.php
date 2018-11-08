@@ -18,7 +18,11 @@ $render = new Render;
                    * App & Play icons
                    */
                   foreach ($data['store-icons'] as $value) {
-                  echo '<a href="'. $value['url'] .'" target="_blank" class="store-icons__href">';
+                  if( $value['url'] ) {
+                        echo '<a href="'. $value['url'] .'" target="_blank" class="store-icons__href">';
+                  } else {
+                        echo '<a class="store-icons__href">';
+                  }
                         echo '<img src="'. get_bloginfo('template_url') . '/assets/build/img/' . $value['icon'] .'" class="store-icons__icon" alt="'. $value['title'] .'">';
                   echo '</a>';
                   }

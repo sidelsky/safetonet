@@ -38,6 +38,7 @@ class CustomPostType
                 'public' => true,
                 'hierarchical' => $args['hierarchical'],
                 'has_archive' => $args['has_archive'],
+                'rewrite' => $args['rewrite'],
                 'menu_icon' =>  $args['menu_icon'],
                 'supports' => array(
                     'page-attributes',

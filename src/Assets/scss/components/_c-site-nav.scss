@@ -6,7 +6,7 @@
     
     .menu-item {
         display: inline-block;
-        margin-left: $spacing--tiny;
+        margin-left: $spacing--small;
         text-transform: uppercase;
         
         a {
@@ -43,7 +43,11 @@
         }
 
         //Active menu items
-        &.current-page-ancestor a, 
+        &.current-page-ancestor a {
+            text-decoration: none;
+            color: palette(quaternary, base);
+        }
+
         &.current_page_item a {
             text-decoration: none;
             color: palette(quaternary, base);

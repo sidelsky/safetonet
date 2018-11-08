@@ -39,6 +39,11 @@ include("header.php"); ?>
                 case 'downloads':
                     $templateName = 'c-downloads';
                     break;
+                
+                //Get the Downloads
+                case 'campaign_banner':
+                    $templateName = 'c-campaign-banner';
+                    break;
         }
 
             echo $render->view('Components/' . $templateName, $value);

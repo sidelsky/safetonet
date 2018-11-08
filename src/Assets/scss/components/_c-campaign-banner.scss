@@ -1,0 +1,42 @@
+.c-campaign-banner {
+    color: palette(bw, white);
+    width: 100%;
+    padding: $spacing--small;
+    background-color: rgba(palette(primary, base), 1);
+    text-align: center;
+    border-radius: 20px;
+
+    @include media('>phone') {
+        border-radius: 100px;
+    }
+
+    &__title {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+    }
+    
+    &__button {
+        display: block;
+        width: 100%;
+
+        @include media('>phone') {
+            width: 30%;
+        }
+    }
+}
+
+// .is-scrolled {
+
+//     .c-campaign-banner {
+
+//         .u-l-container--large {
+//             background-color: rgba(palette(primary, base), 1);
+//         }
+
+//     }
+
+// }

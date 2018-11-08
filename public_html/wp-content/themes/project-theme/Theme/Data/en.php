@@ -21,7 +21,7 @@
 							 ],
 							 [
 									'title' => 'Industry Recognition',
-									'url' => '/about_safetonet/industry_recognition'
+									'url' => '/about_safetonet/industry-recognition'
 							 ],
 							 [
 									'title' => 'FAQs',
@@ -44,6 +44,10 @@
 									'title' => 'Privacy Policy',
 									'url' => '/privacy-policy'
 							 ],
+							 [
+								'title' => 'Cookie Policy',
+								'url' => '/cookie-policy'
+						 	],
 						]
 				 ]
 

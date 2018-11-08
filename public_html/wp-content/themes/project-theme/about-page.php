@@ -3,17 +3,13 @@
  * Template name: About
  */
 use App\Helper\Render;
-use Theme\Model\AdditionalText;
 
 $render = new Render;
-$additionalText = new AdditionalText();
 
-include("header.php");
+include("header.php"); ?>
 
-    //Additional Text
-    $template = 'c-additional-text';
-    $data = $additionalText->getData();
-    echo $render->view('Components/' . $template, $data);
+<?php include('partials/content.php'); ?>
 
+<?php
 include("footer.php"); 
 ?>

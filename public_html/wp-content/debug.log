@@ -4757,3 +4757,124 @@ Stack trace:
 [07-Nov-2018 17:27:21 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
 [07-Nov-2018 17:27:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
 [07-Nov-2018 17:27:26 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[07-Nov-2018 20:59:08 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type campaign is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/functions.php on line 4161
+[07-Nov-2018 20:59:11 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type campaign is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/functions.php on line 4161
+[07-Nov-2018 21:03:00 UTC] PHP Notice:  Undefined index: rewrite in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/CustomPostType.php on line 41
+[07-Nov-2018 21:03:00 UTC] PHP Notice:  Undefined index: rewrite in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/CustomPostType.php on line 41
+[07-Nov-2018 22:44:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[07-Nov-2018 22:44:47 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[08-Nov-2018 09:37:47 UTC] PHP Warning:  Missing argument 1 for Theme\Model\SubpageHero::__construct(), called in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/header.php on line 12 and defined in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/SubpageHero.php on line 8
+[08-Nov-2018 09:37:47 UTC] PHP Notice:  Undefined variable: layout in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/SubpageHero.php on line 10
+[08-Nov-2018 09:48:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\AdditionalText' not found in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php:9
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 9
+[08-Nov-2018 09:49:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\AdditionalText::getData() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php:15
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 15
+[08-Nov-2018 09:50:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\SubpageHero::AdditionalText() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php:18
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 18
+[08-Nov-2018 09:51:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\SubpageHero::AdditionalText() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php:18
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 18
+[08-Nov-2018 09:51:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\SubpageHero::AdditionalText() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php:18
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 18
+[08-Nov-2018 09:51:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\SubpageHero::AdditionalText() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php:18
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 18
+[08-Nov-2018 09:52:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\AdditionalText::AdditionalText() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php:18
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 18
+[08-Nov-2018 09:52:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_content() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php:18
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 18
+[08-Nov-2018 09:53:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_content() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php:18
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/about-page.php on line 18
+[08-Nov-2018 10:00:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\AdditionalText' not found in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/industry-recognition-page.php:11
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/industry-recognition-page.php on line 11
+[08-Nov-2018 10:01:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\AdditionalText' not found in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/industry-recognition-page.php:11
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/industry-recognition-page.php on line 11
+[08-Nov-2018 10:04:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\AdditionalText' not found in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/industry-recognition-page.php:11
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#3 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/industry-recognition-page.php on line 11
+[08-Nov-2018 10:30:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Downloads.php on line 17
+[08-Nov-2018 10:30:00 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/c-downloads.php on line 1
+[08-Nov-2018 12:35:13 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/404.php on line 10
+[08-Nov-2018 16:16:48 UTC] PHP Warning:  include(/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:16:48 UTC] PHP Warning:  include(): Failed opening '/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:17:52 UTC] PHP Warning:  include(/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:17:52 UTC] PHP Warning:  include(): Failed opening '/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:18:24 UTC] PHP Warning:  include(/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:18:24 UTC] PHP Warning:  include(): Failed opening '/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:19:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\CampaignBanner' not found in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:47
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/front-page.php(7): Theme\Model\Layout->__construct()
+#1 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-includes/template-loader.php(74): include('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#3 /Users/sidelsky/Dropbox/www/safetonet/public_html/index.php(17): require('/Users/sidelsky...')
+#4 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 47
+[08-Nov-2018 16:19:43 UTC] PHP Warning:  include(/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:19:43 UTC] PHP Warning:  include(): Failed opening '/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:21:05 UTC] PHP Warning:  include(/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:21:05 UTC] PHP Warning:  include(): Failed opening '/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:21:28 UTC] PHP Warning:  include(/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:21:28 UTC] PHP Warning:  include(): Failed opening '/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:21:51 UTC] PHP Warning:  include(/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:21:51 UTC] PHP Warning:  include(): Failed opening '/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:23:02 UTC] PHP Warning:  include(/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:23:02 UTC] PHP Warning:  include(): Failed opening '/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:23:22 UTC] PHP Warning:  include(/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
+[08-Nov-2018 16:23:22 UTC] PHP Warning:  include(): Failed opening '/Users/sidelsky/Dropbox/www/safetonet/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/sidelsky/Dropbox/www/safetonet/src/App/Helper/Render.php on line 26
