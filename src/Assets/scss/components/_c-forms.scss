@@ -26,6 +26,29 @@
         color: $error;
     }
 
+    //Radio
+    .gfield_radio {
+
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        li {
+
+            label {
+                text-transform: initial;
+            }
+
+            @include media('>phone') {
+                width: 50%;
+                float: left;
+            }
+
+        }
+    }
+
     input,
     input[type="text"],
     input[type="tel"],
@@ -45,7 +68,7 @@
             @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
         }
         
-        &:focus {
+        &:focus:not(.button) {
             border-bottom: 1px solid palette(greys, base);
             @include set-font-size(2.8rem, 2.8rem, 2.8rem, 2.8rem);
 

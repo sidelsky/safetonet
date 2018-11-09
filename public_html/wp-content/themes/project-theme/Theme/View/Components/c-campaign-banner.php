@@ -4,8 +4,12 @@
 		<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding--small">
 
             <div class="c-campaign-banner">
-                <h2 class="c-site-headings--h2 c-site-headings--h2--campaign-banner c-site-headings--h2--feature"><?= $data['title']; ?></h2>
-                <a href="<?= $data['link']; ?>" class="u-button u-button u-button--small c-campaign-banner__button">Join</a>
+				<span class="c-campaign-banner--cell">
+				<h2 class="c-campaign-banner__title"><a href="<?= $data['link']; ?>"><?= $data['title']; ?></a></h2>
+				</span>
+				<span class="c-campaign-banner--cell">
+					<a href="<?= $data['link']; ?>" class="u-button u-button u-button--small c-campaign-banner__button">Join</a>
+				</span>
             </div>    
 
 		</div>
