@@ -19,7 +19,7 @@ class Enqueues
 
     public function __construct()
     {
-        $this->manifestContent = json_decode(file_get_contents('../public_html/mix-manifest.json'), true);
+        $this->manifestContent = json_decode(file_get_contents('../wwwroot/mix-manifest.json'), true);
         $this->buildPath = '/wp-content/themes/project-theme/assets/build/';
 
         $this->detectJsCodeSplit();

@@ -9,7 +9,9 @@
                 <?php foreach($data['plans'] as $plan) { ?>
                     <div class="c-plan-card">
                         <div class="c-plan-card__header">
-                            <img class="c-plan-card__logo-mark" src="<?= $plan['planIcon'] ?>" alt="<?= $plan['planTitle'] ?>">
+                            <?php if( $plan['planIcon'] ) :?>
+                                <img class="c-plan-card__logo-mark" src="<?= $plan['planIcon'] ?>" alt="<?= $plan['planTitle'] ?>">
+                            <?php endif; ?>
                             <h3 class="c-plan-card__title"><?= $plan['planTitle'] ?></h3>
                             <p class="c-plan-card__description"><?= $plan['planDescription'] ?></p>
                         </div>
@@ -24,9 +26,9 @@
                             <span class="c-plan-card__price"><sup class="c-plan-card__sup">£</sup><?= $plan['planPrice']; ?></span> <span>Month</span>
                         </div>
 
-                        <a href="" class="u-button c-plan-card__button">
+                        <div class="u-button c-plan-card__button" style="cursor: default">
                             <?= $plan['planButtonTitle']; ?>
-                        </a>
+                        </div>
 
                     </div>
                 <?php } ?>

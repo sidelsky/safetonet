@@ -5,10 +5,10 @@
 
             <div class="c-campaign-banner">
 				<span class="c-campaign-banner--cell">
-				<h2 class="c-campaign-banner__title"><a href="<?= $data['link']; ?>"><?= $data['title']; ?></a></h2>
+				<span class="c-campaign-banner__title"><a href="<?= $data['link']; ?>"><?= $data['title']; ?></a></span>
 				</span>
 				<span class="c-campaign-banner--cell">
-					<a href="<?= $data['link']; ?>" class="u-button u-button u-button--small c-campaign-banner__button">Join</a>
+					<a href="<?= $data['link']; ?>" class="u-button u-button u-button--small c-campaign-banner__button">Find Out More</a>
 				</span>
             </div>    
 

@@ -47,7 +47,15 @@
 							 [
 								'title' => 'Cookie Policy',
 								'url' => '/cookie-policy'
-						 	],
+							 ],
+							 [
+								'title' => 'Data Privacy',
+								'url' => '/data-privacy'
+							 ],
+							 [
+								 'title' => 'Privacy Policy - Plain English',
+								 'url' => '/privacy-policy-plain-simple-english'
+							 ]
 						]
 				 ]
 
