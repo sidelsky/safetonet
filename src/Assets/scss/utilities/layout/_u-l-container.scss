@@ -19,7 +19,10 @@
     position: relative;
 
     &--row {
-        lost-flex-container: row;
+        // Tablet upwards
+        @include media('>tablet') { 
+            lost-flex-container: row;
+        }
     }
 
     &--small {
