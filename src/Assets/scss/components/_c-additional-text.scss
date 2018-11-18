@@ -12,11 +12,11 @@
             margin-bottom: $spacing--medium;
             @include set-font-size(1.8rem, 1.8rem, 1.8rem, 1.8rem);
             line-height: 1.75;
+    }
 
-            a {
-                color: currentColor;
-                text-decoration: underline;
-            }
+    a {
+        color: currentColor;
+        text-decoration: underline;
     }
 
     img {

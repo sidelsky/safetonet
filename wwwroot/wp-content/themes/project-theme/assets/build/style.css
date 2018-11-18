@@ -175,7 +175,7 @@ table {
   }
 }
 
-.c-additional-text p a {
+.c-additional-text a {
   color: currentColor;
   text-decoration: underline;
 }
@@ -874,11 +874,13 @@ table {
   display: inline-block;
   margin-bottom: 2rem;
   padding: 2rem;
-  max-width: 55%;
+  max-height: 75px;
 }
 
 .c-feature-card__image img {
   opacity: 0.8;
+  max-width: 55%;
+  margin: 0 auto;
 }
 
 .c-feature-card__blockquote p {

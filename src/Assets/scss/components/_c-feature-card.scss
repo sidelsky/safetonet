@@ -26,10 +26,12 @@
     display: inline-block;
     margin-bottom: $spacing--small;
     padding: $spacing--small;
-    max-width: 55%;
+    max-height: 75px;
 
     img {
         opacity: 0.8;
+        max-width: 55%;
+        margin: 0 auto;
     }
 
    }
