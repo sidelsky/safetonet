@@ -1892,6 +1892,68 @@ table {
   }
 }
 
+.c-lang {
+  font-size: 1.2rem;
+  letter-spacing: .05rem;
+  list-style-type: none;
+}
+
+@media (min-width: 376px) {
+  .c-lang {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-lang {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .c-lang {
+    font-size: 1.2rem;
+  }
+}
+
+.c-lang li {
+  display: inline-block;
+}
+
+.c-lang a {
+  color: currentColor;
+  margin-left: 1rem;
+}
+
+.c-lang--desktop {
+  color: #fff;
+  text-align: right;
+}
+
+@media (max-width: 1023px) {
+  .c-lang--desktop {
+    display: none;
+  }
+}
+
+.c-lang--mobile {
+  text-align: center;
+  display: block;
+  color: #8A8A8A;
+  margin-bottom: 4rem;
+  line-height: 3;
+}
+
+@media (min-width: 1025px) {
+  .c-lang--mobile {
+    display: none;
+  }
+}
+
+.current-lang {
+  text-decoration: underline;
+}
+
 .c-mobile-navigation {
   background-color: #fff;
   height: 100%;

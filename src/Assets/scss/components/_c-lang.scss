@@ -1,0 +1,46 @@
+.c-lang {
+    @include set-font-size(1.2rem, 1.2rem, 1.2rem, 1.2rem);
+    letter-spacing: .05rem;
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        color: currentColor;
+        margin-left: $spacing--tiny;
+    }
+}
+
+
+.c-lang--desktop {
+
+    color: palette(bw, white);
+    text-align: right;
+
+    @include media('<desktop') {
+        display: none;    
+    }
+}
+
+
+
+.c-lang--mobile {
+    text-align: center;
+    display: block;
+    color: palette(greys, base);
+    margin-bottom: $spacing--large;
+    line-height: 3;
+
+    @include media('>desktop') {
+        display: none;    
+    }
+
+
+}
+
+
+.current-lang {
+    text-decoration: underline;
+}

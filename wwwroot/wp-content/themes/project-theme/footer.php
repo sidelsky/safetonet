@@ -27,20 +27,20 @@ $wordpress = new WordpressHelper;
 							
 							<div class="c-footer__column">
 								<div class="c-footer__inner-row">
-								<?php foreach ($themeData['footerNavigation'] as $column) { ?>
+									<?php if ( is_active_sidebar( 'footer_1' ) ) : ?>
 									<div class="c-footer__inner-column">
-										<h4 class="c-site-headings--h4"><?php echo $column['columnTitle']; ?></h4>
 										<ul class="c-footer__inner-column__item">
-											<?php foreach ($column['items'] as $item) { ?>
-												<li>
-													<a href="<?php echo $item['url']; ?>" >
-														<?php echo $item['title']; ?>
-													</a>
-												</li>
-											<?php }?>
+											<?php dynamic_sidebar( 'footer_1' ); ?>
 										</ul>
 									</div>
-								<?php }?>
+									<?php endif; ?>
+									<?php if ( is_active_sidebar( 'footer_2' ) ) : ?>
+									<div class="c-footer__inner-column">
+										<ul class="c-footer__inner-column__item">
+											<?php dynamic_sidebar( 'footer_2' ); ?>
+										</ul>
+									</div>
+									<?php endif; ?>
 								</div>
 							<div>
 
@@ -50,8 +50,14 @@ $wordpress = new WordpressHelper;
 
 				</div>
 				
-				<div class="u-l-container">		
-					<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?></p>
+				<div class="u-l-container">
+					<?php if( pll_current_language() == 'en' ) : ?>
+						<p class="c-footer__copyright"><?php echo  '&copy' . date('Y') . ' ' . get_bloginfo('title') . ' | ' . get_field('copyright_details', 'en') ?></p>
+					<?php elseif( pll_current_language() == 'es' ) : ?>
+						<p class="c-footer__copyright"><?php echo  '&copy' . date('Y') . ' ' . get_bloginfo('title') . ' | ' . get_field('copyright_details', 'es') ?></p>
+					<?php elseif( pll_current_language() == 'de' ) : ?>
+						<p class="c-footer__copyright"><?php echo  '&copy' . date('Y') . ' ' . get_bloginfo('title') . ' | ' . get_field('copyright_details', 'de') ?></p>
+					<?php endif; ?>
 				</div>
 
 			</footer>

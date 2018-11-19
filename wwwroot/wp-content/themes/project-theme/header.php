@@ -35,7 +35,9 @@ $wordpress = new WordpressHelper;
 		include('Theme/Data/en.php');
 	?>
 
+	<!-- START: Mobile Vavigation -->
 	<div class="c-mobile-navigation">
+
 		<?php
 			$menu_args = [
 				'menu' => 'Tertiary navigation',
@@ -44,10 +46,14 @@ $wordpress = new WordpressHelper;
 				'items_wrap' => '<ul class="c-mobile-navigation__menu">%3$s</ul>'
 			];
 			echo '<nav>';
+				echo '<ul class="c-lang c-lang--mobile">';
+				pll_the_languages();
+				echo '</ul>';
 				wp_nav_menu($menu_args); 
 			echo '</nav>';
 		?>
 	</div>
+	<!-- END: Mobile Navigation -->
 		
 		<div id="header" class="header l-site-header-container <?= is_front_page() ? 'l-site-header-container--blue' : 'l-site-header-container--white'; ?>">
 
@@ -58,6 +64,11 @@ $wordpress = new WordpressHelper;
 			<!-- END: Hamburger -->
 
 			<div class="u-l-container u-l-horizontal-padding">
+				
+				<!-- START: Language Switcher -->
+				<ul class="c-lang c-lang--desktop"><?php pll_the_languages();?></ul>
+				<!-- END: Language Switcher -->
+
 				<div class="l-site-header c-site-header">
 					<div class="l-site-header__title">
 						<?= $render->view('Components/c-site-title', $wordpress->getBlogInfo('title')); ?>
@@ -120,6 +131,7 @@ $wordpress = new WordpressHelper;
 			echo '</div>';
 
 			?>
+
 		</div>
 
 
