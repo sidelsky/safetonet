@@ -185,6 +185,11 @@ table {
   height: auto;
 }
 
+.c-additional-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
 .c-additional-text ol {
   list-style: none;
   counter-reset: my-awesome-counter;
@@ -3252,6 +3257,10 @@ table {
   .l-site-header__social:last-child {
     margin-right: 0;
   }
+}
+
+.l-table-wrap {
+  overflow-x: auto;
 }
 
 /*
