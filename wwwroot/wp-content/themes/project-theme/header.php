@@ -22,7 +22,7 @@ $wordpress = new WordpressHelper;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
       	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon.png" sizes="16x16" />
-
+		  
 		<?php wp_head(); ?>
 	</head>
 

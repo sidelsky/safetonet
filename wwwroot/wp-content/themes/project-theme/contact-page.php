@@ -1,3 +1,29 @@
+<!-- Live Chat -->
+<script>
+function initFreshChat() {
+    window.fcWidget.init({
+        token: "dd0892b5-c631-46c3-b99b-c3e25899585f",
+        host: "https://wchat.freshchat.com"
+    });
+}
+
+(function(d, id) {
+    var fcJS;
+    if (d.getElementById(id)) {
+        initFreshChat();
+        return;
+    }
+    fcJS = d.createElement('script');
+    fcJS.id = id;
+    fcJS.async = true;
+    fcJS.src = 'https://wchat.freshchat.com/js/widget.js';
+    fcJS.onload = initFreshChat;
+    d.head.appendChild(fcJS);
+}(document, 'freshchat-js-sdk'));
+</script>
+
+        
+ 
 <?php
 /**
  * Template name: Contact

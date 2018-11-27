@@ -23,28 +23,28 @@ class Plans {
 		   $planDetails = [];
 
 		   foreach($plan['plan_items'] as $item) {
-			$planDetails[] = [
-				'planDetailTitle' => $item['plan_detail_title'],
-				'planDetail' => $item['plan_detail']
-			];
+				$planDetails[] = [
+					'planDetailTitle' => $item['plan_detail_title'],
+					'planDetail' => $item['plan_detail']
+				];
 		   }
 
 		   $plans[] = [
-			'planIcon' 	=> $plan['plan_icon']['url'],
-			'planTitle' => $plan['plan_title'],
-			'planDescription' => $plan['plan_description'],
-			'planDetails' => $planDetails,
-			'planPrice' => $plan['plan_price'],
-			'planButtonTitle' => $plan['plan_button_title'],
+				'planIcon' 	=> $plan['plan_icon']['url'],
+				'planTitle' => $plan['plan_title'],
+				'planDescription' => $plan['plan_description'],
+				'planDetails' => $planDetails,
+				'planPrice' => $plan['plan_price'],
+				'planButtonTitle' => $plan['plan_button_title'],
 			];
 		}
 
       return [
         'layoutName' => 'price_plans',
-		'pricePlanTitle' => $pricePlanTitle,
-		'pricePlanDescription' => $pricePlanDescription,
-		'showPlans' => $show,
-		'plans' => $plans,
+			'pricePlanTitle' => $pricePlanTitle,
+			'pricePlanDescription' => $pricePlanDescription,
+			'showPlans' => $show,
+			'plans' => $plans,
       ];
    }
 }

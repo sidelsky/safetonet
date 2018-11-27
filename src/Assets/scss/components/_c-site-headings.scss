@@ -2,7 +2,8 @@
 
    font-family: font-family(primary, book);
    color: palette(bw, white);
-   //color: white;
+   display: block;
+   width: 100%;
 
        //Underline title
        &--underline {
