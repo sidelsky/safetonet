@@ -16,17 +16,3 @@ export default class Accordion {
 
 }
 
-
-
-
-/*
-    var acc = document.getElementsByClassName("accordion"),
-    i,
-    panel;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.parentElement.classList.toggle("active");
-        });
-    }
-*/

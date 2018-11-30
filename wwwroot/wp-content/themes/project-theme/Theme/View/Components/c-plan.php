@@ -1,3 +1,33 @@
+<?php
+
+$planInfo_EN = [
+    'currency' => '£',
+    'time' => 'Month'
+];
+
+$planInfo_DE = [
+    'currency' => '€',
+    'time' => 'Monat'
+];
+
+$planInfo_ES = [
+    'currency' => '€',
+    'time' => 'Mes'
+];
+
+
+if( pll_current_language() == 'en' ) {
+    $planLang = $planInfo_EN;
+} elseif( pll_current_language() == 'es' ) {
+    $planLang = $planInfo_ES;
+} elseif( pll_current_language() == 'de' ) {
+    $planLang = $planInfo_DE;
+}
+
+?>
+
+
+
 <?php if( $data['showPlans'] ) : ?>
     <section class="u-section u-bg-color--bw-white">
         <div class="u-l-container--center u-l-container--shallow" data-in-viewport>
@@ -23,7 +53,7 @@
                         </ul>
                         
                         <div class="c-plan-card__price-container">
-                            <span class="c-plan-card__price"><sup class="c-plan-card__sup">£</sup><?= $plan['planPrice']; ?></span> <span>Month</span>
+                            <span class="c-plan-card__price"><sup class="c-plan-card__sup"><?= $planLang['currency'] ?></sup><?= $plan['planPrice']; ?></span> <span><?= $planLang['time'] ?></span>
                         </div>
 
                         <div class="u-button c-plan-card__button" style="cursor: default">

@@ -41,6 +41,13 @@ $wordpress = new WordpressHelper;
 										</ul>
 									</div>
 									<?php endif; ?>
+									<?php if ( is_active_sidebar( 'footer_3' ) ) : ?>
+									<div class="c-footer__inner-column">
+										<ul class="c-footer__inner-column__item">
+											<?php dynamic_sidebar( 'footer_3' ); ?>
+										</ul>
+									</div>
+									<?php endif; ?>
 								</div>
 							<div>
 
@@ -62,30 +69,26 @@ $wordpress = new WordpressHelper;
 
 			</footer>
 
-	 	</div>
+		 </div>
+		 
+		  <script src="https://snippets.freshchat.com/js/fc-pre-chat-form-v2.js"></script>
+		  <script src="https://wchat.freshchat.com/js/widget.js" async></script>
 
 		<?php 
+		
 		wp_footer(); 
 
-		$googleAnalyticID = get_field('google_analytics', 'option');
-		
-		//Google Analytics
-		$template = 'c-google-analytics';
-		$data = [
-			'UA' => $googleAnalyticID
-		];
+			$googleAnalyticID = get_field('google_analytics', 'option');
+			
+			//Google Analytics
+			$template = 'c-google-analytics';
+			$data = [
+				'UA' => $googleAnalyticID
+			];
 
-		echo $render->view('Components/' . $template, $data);
+			echo $render->view('Components/' . $template, $data);
 
 		?>
 
-		<!-- 
-			Chat 
-			<div class="chat">
-				<div class="chat__button"></div>
-				<div class="chat__modal"></div>
-			</div>
-		-->
-		
 	</body>
 </html>

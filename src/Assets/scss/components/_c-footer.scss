@@ -31,7 +31,7 @@
     &__copyright {
         @include set-font-size(1.2rem, 1.2rem, 1.2rem, 1.2rem);
         line-height: 1.5;
-        padding-bottom: $spacing--medium;
+        padding: $spacing--medium 0;
         text-align: center;
     }
 
@@ -54,9 +54,11 @@
     &__inner-column__item {
         margin-bottom: $spacing--medium;
         @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
-        line-height: 2.5;
+        line-height: 1.5;
 
         a {
+            margin-bottom: $spacing--tiny;
+            display: block;
 
             &:hover {
                 text-decoration: underline;

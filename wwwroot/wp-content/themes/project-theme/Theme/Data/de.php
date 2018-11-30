@@ -4,8 +4,8 @@
 		* @author Errol Sidelsky
 		*/
 	$themeData = [
-			
-			'social_title' => 'Connect with Us',
+
+			'social_title' => 'Verbinde dich mit uns',
 			
 			//Social info
 			'social' => [
@@ -34,7 +34,7 @@
 			//Knowledge Hub
 			'hub' => [
 				'download'  => 'Download:',
-				'fileSize' => 'File size:'
+				'fileSize' => 'Dateigröße:'
 			]
 
 	];

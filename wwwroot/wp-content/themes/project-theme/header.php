@@ -21,9 +21,10 @@ $wordpress = new WordpressHelper;
 		<meta charset="<?php bloginfo('charset'); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
-      	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon.png" sizes="16x16" />
 		  
 		<?php wp_head(); ?>
+
 	</head>
 
 	<body <?php body_class(); ?> id="body">
@@ -32,8 +33,14 @@ $wordpress = new WordpressHelper;
 		/**
 		 * Theme Data
 		 */
-		include('Theme/Data/en.php');
 	?>
+	<?php if( pll_current_language() == 'en' ) : ?>
+		<?php include('Theme/Data/en.php'); ?>
+	<?php elseif( pll_current_language() == 'es' ) : ?>
+		<?php include('Theme/Data/es.php'); ?>
+	<?php elseif( pll_current_language() == 'de' ) : ?>
+		<?php include('Theme/Data/de.php'); ?>
+	<?php endif; ?>
 
 	<!-- START: Mobile Vavigation -->
 	<div class="c-mobile-navigation">
@@ -91,8 +98,9 @@ $wordpress = new WordpressHelper;
 			
 			<?php
 
-			// Page IDs from WordPress
-			$parent =[
+
+			// Page IDs from WordPress used to define the subnavigation
+			$parent_EN =[
 				'about' => [
 					'pageId' => 2,
 					'navName' => 'Quaternary navigation'
@@ -102,6 +110,37 @@ $wordpress = new WordpressHelper;
 					'navName' => 'Secondary navigation'
 				]
 			];
+
+			$parent_ES =[
+				'about' => [
+					'pageId' => 917,
+					'navName' => 'Quaternary navigation spanish'
+				],
+				'contact' => [
+					'pageId' => 694,
+					'navName' => 'Secondary navigation spanish'
+				]
+			];
+
+			$parent_DE =[
+				'about' => [
+					'pageId' => 729,
+					'navName' => 'Quaternary navigation german'
+				],
+				'contact' => [
+					'pageId' => 1045,
+					'navName' => 'Secondary navigation german'
+				]
+			];
+
+			if( pll_current_language() == 'en' ) {
+				$parent = $parent_EN;
+			} elseif( pll_current_language() == 'es' ) {
+				$parent = $parent_ES;
+			} elseif( pll_current_language() == 'de' ) {
+				$parent = $parent_DE;
+			}
+
 
 			echo '<div class="u-l-container u-l-horizontal-padding subnavigation-wrapper">';
 
@@ -126,7 +165,6 @@ $wordpress = new WordpressHelper;
 						wp_nav_menu($menu_args); 
 					echo '</nav>';
 				}; 
-
 
 			echo '</div>';
 

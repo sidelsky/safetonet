@@ -5,10 +5,14 @@
     padding-bottom: $spacing--medium;
     
     &__subsection {
-        background-color: palette(greys,  xx-light);
+        background-color: palette(greys,  xxx-light);
         margin-bottom: $spacing--large;
-        padding: $spacing--medium;
+        padding: $spacing--medium $spacing--medium $spacing--x-tiny $spacing--medium;
         border-radius: 10px;
+
+        p:first-of-type {
+            color: palette(greys, dark);
+        }
     }
 
     .c-site-headings {
@@ -42,19 +46,32 @@
 
 
 .file-wrap {
-    margin-bottom: $spacing--medium;
+    margin-bottom: $spacing--small;
 }
 
 .file-container {
     min-height: 84px;
     position: relative;
-    background: #fff;
-    margin-bottom: $spacing--tiny;
+    background: palette(bw, white);
+    margin: $spacing--small 0;
+    
+    &:last-of-type {
+        margin-bottom: $spacing--medium;
+    }
+    
+    &:target {
+        animation: fadeIt 3s ease-in-out;
+        border: solid 1px palette(quaternary, base);
+        @keyframes fadeIt {
+            0%   { background-color: palette(bw, base) }
+            50%  { background-color: palette(quaternary, light) }
+            100% { background-color: palette(bw, base) }
+          }
+    }
 }
 
 .file-icon {
     position: absolute;
-    background: #fff;
     top: 0;
     left: 0;
     bottom: 0;
@@ -64,6 +81,10 @@
 .file-info {
     padding: 10px;
     margin-left: 69px;
+
+    p.file-info__title {
+        color: palette(primary, base);
+    }
 }
 
 .file-info p {
@@ -74,6 +95,7 @@
 
     &.file-description {
         margin-bottom: $spacing--tiny;
+        color: palette(greys, dark);
     }
 }
 
@@ -84,5 +106,25 @@
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+
+.file-download {
+    color: palette(greys, base);
+}
+
+.file-copy {
+
+    position: absolute;
+    top: $spacing--x-tiny;
+    right: $spacing--x-tiny;
+    text-transform: uppercase;
+    font-size: 11px;
+    border: solid 1px palette(greys, xx-light);
+
+    &:hover {
+        cursor: pointer;
+        background-color: palette(greys, x-light);
     }
 }
