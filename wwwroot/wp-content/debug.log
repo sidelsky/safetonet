@@ -6162,3 +6162,30 @@ Stack trace:
 [30-Nov-2018 16:10:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/Theme/Model/Contact.php on line 17
 [30-Nov-2018 16:11:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/Theme/Model/Contact.php on line 17
 [30-Nov-2018 16:11:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/Theme/Model/Contact.php on line 17
+[03-Dec-2018 16:37:19 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/Theme/Model/Features.php on line 16
+[03-Dec-2018 16:37:19 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/Theme/Model/Promos.php on line 21
+[03-Dec-2018 16:37:19 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/Theme/Model/Plans.php on line 18
+[03-Dec-2018 16:37:19 UTC] PHP Notice:  Undefined index: show in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/Theme/Model/Features.php on line 16
+[03-Dec-2018 16:37:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pll_current_language() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/header.php:37
+Stack trace:
+#0 /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/front-page.php(13): include()
+#1 /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wordpress/wp-includes/template-loader.php(74): include('/Users/sidelsky...')
+#2 /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wordpress/wp-blog-header.php(19): require_once('/Users/sidelsky...')
+#3 /Users/sidelsky/Dropbox/www/safetonet/wwwroot/index.php(17): require('/Users/sidelsky...')
+#4 {main}
+  thrown in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/header.php on line 37
+[03-Dec-2018 16:39:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:45:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:45:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:46:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:46:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:49:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:51:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:51:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:51:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:52:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:53:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:53:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:54:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:54:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35
+[03-Dec-2018 16:54:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/sidelsky/Dropbox/www/safetonet/wwwroot/wp-content/themes/project-theme/knowledge-hub-page.php on line 35

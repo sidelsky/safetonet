@@ -67,7 +67,7 @@ include("header.php"); ?>
                                 <div class="file-container" id="<?= $hashTitle ?>">
 
                                     <button class="file-copy copy-btn">Copy URL</button>
-                                    <input class="js-cuttextarea" type="text" value="<?= $current_url . '/#' . $hashTitle  ?>" id="myInput" hidden>
+                                    <input class="js-cuttextarea" type="text" value="<?= $current_url . '/#' . $hashTitle  ?>" id="myInput" xhidden>
                                     
                                     <div class="file-icon">
                                         <img data-name="icon" src="http://safetonet/wordpress/wp-includes/images/media/document.png" alt="">
