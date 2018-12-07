@@ -75,7 +75,7 @@ $wordpress = new WordpressHelper;
 		  <script src="https://wchat.freshchat.com/js/widget.js" async></script>
 
 		<?php 
-		
+		 
 		wp_footer(); 
 
 			$googleAnalyticID = get_field('google_analytics', 'option');

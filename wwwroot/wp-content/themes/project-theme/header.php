@@ -106,7 +106,7 @@ $wordpress = new WordpressHelper;
 					'navName' => 'Quaternary navigation'
 				],
 				'contact' => [
-					'pageId' => 315,
+					'pageId' => 262,
 					'navName' => 'Secondary navigation'
 				]
 			];

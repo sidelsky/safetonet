@@ -3,20 +3,32 @@
     margin-bottom: $spacing--small;
     line-height: 1.75;
 
+    .u-button {
+        width: 90%;
+        text-align: center;
+    }
+
     @include media('>phone') {
         lost-column: 12/12;
 
-        &:nth-of-type(2) {
-            lost-column: 12/12;
-        }
+        // &:nth-of-type(2) {
+        //     lost-column: 12/12;
+        // }
 
     }
 
     @include media('>tablet') {
-        lost-column: 4/12 0 30px;
+        lost-column: 3/12 0 30px;
 
         &:nth-of-type(2) {
-            lost-column: 8/12;
+            lost-column: 5/12;
+        }
+
+        &:nth-of-type(3) {
+            lost-column: 4/12;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
         }
 
     }

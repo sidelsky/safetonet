@@ -6,9 +6,22 @@
 					<div class="c-hero__content">
 					<p><?= $data['content'] ?></p>
 
-					<?php if( is_404() ) : ?>
-						<h1 class="c-site-headings c-site-headings--uppercase c-site-headings--h1 c-site-headings--h1--small">OOPS!</h1>
-						<p>Error 404.</p>
+					<?php 
+					
+						if( pll_current_language() == 'en' ) {
+								$title = '404 Error';
+								$copy = 'Page Not Found!';
+						} elseif( pll_current_language() == 'es' ) {
+								$title = '404 Error';
+								$copy = '¡Página no encontrada!';
+						} elseif( pll_current_language() == 'de' ) {
+								$title = '404 Fehler';
+								$copy = 'Seite nicht gefunden!';
+						}
+						
+						if( is_404() ) : ?>
+						<h1 class="c-site-headings c-site-headings--uppercase c-site-headings--h1 c-site-headings--h1--small"><?= $title ?></h1>
+						<p><?= $copy ?></p>
 					<?php endif; ?>
 			</div>
 		</div>

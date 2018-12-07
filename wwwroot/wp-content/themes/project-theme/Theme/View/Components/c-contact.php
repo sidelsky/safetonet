@@ -7,6 +7,21 @@
                     <?= $contact['detail']; ?>
                 </div>
             <?php } ?>
+            <div class="c-contact">
+                <?php
+                    if( pll_current_language() == 'en' ) {
+                        $buttonTitle = 'Support';
+                        $url = 'en';
+                    } elseif( pll_current_language() == 'es' ) {
+                        $buttonTitle = 'Apoyo';
+                        $url = 'es';
+                    } elseif( pll_current_language() == 'de' ) {
+                        $buttonTitle = 'Unterstützung';
+                        $url = 'de';
+                    }
+                ?>
+                <a href="https://support.safetonet.com/<?= $url ?>/support/home" target="_blank" class="u-button"><?= $buttonTitle ?></a>
+            </div>
         </div>
     </div>
 </section>
