@@ -127,7 +127,7 @@ if (contact_DE_Local || contact_DE_Live) {
     //Chat form Welcome Message
     textBanner: 'Hallo, willkommen bei SafeToNet! Um mit uns zu chatten, brauchen wir ein paar Informationen von Ihnen. Wir werden Sie dann sofort mit dem nächsten verfügbaren Teammitglied verbinden!',
     //Submit Button Label.
-    SubmitLabel: 'Start Chat',
+    SubmitLabel: 'Chat starten',
     //Fields List - Maximum is 5
     //All the values are mandatory and the script will not work if not available.
     fields: {
@@ -216,7 +216,7 @@ if (contact_EN_Local || contact_EN_Live) {
     //Chat form Welcome Message
     textBanner: 'Hi, welcome to SafeToNet! To start a chat with us, we just need a few details. We will then put you in contact with our next available agent!',
     //Submit Button Label.
-    SubmitLabel: 'Empezar Chat',
+    SubmitLabel: 'Start chat',
     //Fields List - Maximum is 5
     //All the values are mandatory and the script will not work if not available.
     fields: {
